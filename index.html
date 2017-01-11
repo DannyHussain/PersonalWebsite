@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="styles/designs.css">
 
 <head>
   <meta charset="utf-8">
@@ -10,13 +11,13 @@
 
 <ul>
   <li><a href="">Home</a></li>
-  <li><a href="">News</a></li>
-  <li><a href="">Contact</a></li>
+  <li><a href="">Projects/Articles</a></li>
   <li><a href="">About</a></li>
+  <li><a href="">Contact</a></li>
 </ul>
 
 <header>
-  <h1>Danish Hussain</h1>
+ <center> <h1>Danish Hussain</h1> </center>
 </header>
 
     <h2>About Me</h2>
@@ -26,9 +27,12 @@
 
     <h2>About This Website</h2>
     <p>This website is currently under development, more information to follow...</p>
-   
+
+<p>Your visit time:</p>
+<p id="date"></p>   
 <footer>
-Danish Hussain - 2017
+<p>Danish Hussain</p>
+<script>document.getElementById("date").innerHTML = Date(); </script>
 </footer>
 
 </body>

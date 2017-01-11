@@ -1,0 +1,9 @@
+body {
+	margin: 0;
+	color: #010c89;
+	font-family: verdana, sans-serif;
+}
+header {
+	background: #ccc;
+	overflow: auto;
+}
