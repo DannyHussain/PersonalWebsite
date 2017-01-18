@@ -17,6 +17,12 @@ html, body {
 	overflow: auto;
 }
 
+/* Remove default link settings*/
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
 /*Navigation Bar*/
 .navigation {
 	float: right;
@@ -68,7 +74,37 @@ a.Contact {
 	left: 0px;
 }
 
+#header {
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	color: #FFFFFF;
+	position: absolute;
+	left: 650px;
+	top: 300px;
 }
+
+/* Buttons */
+.buttons{
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	left: 750px;
+	top: 500px;
+	
+}
+
+a.CV{
+	color: #FFFFFF;
+	border: 4px solid white;
+	box-sizing: border-box;
+}
+
+a.Social{
+	color: #FFFFFF;
+	border: 4px solid white;
+	box-sizing: border-box;
+}
+
 
 
 /*Footer*/
