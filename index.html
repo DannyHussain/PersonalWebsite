@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="styles/homepage.css">
-<meta charset="utf-8">
-<title>Personal Website</title>
+<head>
+  <meta charset="utf-8">
+  <title>Personal Website</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/homepage.css">
+  <script src="styles/styling.js"></script>
 </head>
 
+
 <body>
-  <div id="header">
-      <h1>Software Developer</h1>
-    </div>
 
-      <div class="navigation">
+   <header>
+    <h1>Software Developer</h1>
+  </header>
 
-        <p>
-          <a href= "index.html" class = "Homepage">Home</a>
+<ul class="navigation" id="myNav">
 
-          <a href= "projects.html" class = "Projects">Projects/Articles</a>
+          <li><a href= "index.html" class = "HomeLink">Home</a></li>
 
-          <a href= "about.html" class = "About">About</a>
+          <li><a href= "projects.html">Projects/Articles</a></li>
 
-          <a href= "contact.html" class = "Contact"> Contact</a>
-        </p>
+          <li><a href= "about.html">About</a></li>
 
-      </div>
+          <li><a href= "contact.html"> Contact</a><li>
+
+    <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+    </li>
+
+
+
+</ul>
+    
 
     <div class="buttons">
      <a href= "CV.html" class = "CV">CV/Resume</a>
@@ -34,6 +44,9 @@
         © Danish Hussain 2017 - All Rights Reserved.
       </p>
     </div>
+
+
+
 
   </body>
 

@@ -1,92 +1,164 @@
-/*Background and html*/
-html, body {
+/*-------------------------------MOBILE-VERSION!!----------------------------------*/
+
+body {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 14px;
-	background-image: url("../images/background.jpg");
-	background-attachment: fixed;
-	background-position:center center;
-	background-blend-mode:darken; 
+	background-image: url("../images/background2.jpg");
 	color: #FFFFD1;
-	margin: 0 0 0px;
 	margin: 0;
+	padding:0;
 	height: 100%;
-	line-height: 1.0;
-	position: relative;
-	width: 100%;
-	resize: both;
-	overflow: auto;
+	overflow: hidden
+
 }
+
+header {
+	font-family: 'Roboto Slab', serif;
+	font-size: 15px;
+	color: #FFFFFF;
+	position: fixed;
+	left: 130px;
+	top:-10px;
+	letter-spacing:1px;
+	font-weight:200;
+	width: 100%;
+	height: 60px;
+}
+
+#footer {
+	width: 100%;
+	height: 45px;
+	position: absolute;
+	bottom:0;
+	background: #333;
+	border-top:1px solid;
+}
+
+/*--Start Navigation Bar--*/
 
 /* Remove default link settings*/
 a {
 	text-decoration: none;
 	color: #FFFFFF;
-}
-
-/*Navigation Bar*/
-.navigation {
-	width: 100%;
-	height: 45px;
-	position: absolute;
-	background: #000000;
-	border-bottom:1px solid
-}
-
-
-
-a.Homepage {
-
 	padding: 0px;
 	font-weight: bold;
 	font-size: 20px;
 	color: #FFFFFF;
 	position: relative;
-	left: 500px;
 }
 
-a.Projects {
-
-	padding: 0px;
-	font-weight: bold;
-	font-size: 20px;
-	color: #FFFFFF;
-	position: relative;
-	top: 0px;
-	left: 700px;
+/*Create the navigation bar*/
+ul.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-a.About {
-
-	padding: 0px;
-	font-weight: bold;
-	font-size: 20px;
-	color: #FFFFFF;
-	position: relative;
-	top: 0px;
-	left: 900px;
+/*Arrange the items in the navigation bar (Move to the right and display inline)*/
+ul.navigation li {
+padding-left:300px;
+display:inline-block;
 }
 
-a.Contact {
-
-	padding: 0px;
-	font-weight: bold;
-	font-size: 20px;
-	color: #FFFFFF;
-	position: relative;
-	top: 0px;
-	left: 1100px;
+/*Spacing and organising the list*/
+ul.navigation li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
 }
 
-#header {
+/*Adding a hover effect*/
+ul.navigation li a:hover {
+	background-color: #555;
+}
+
+/*Menu icon is hidden when the page is over the limit specified*/
+ul.navigation li.icon {
+	display: none;
+}
+
+/*Once the width is below 580px do the following*/
+@media screen and (max-width:580px) {
+
+/*Hide the links into the menu*/
+ul.navigation li
+  {
+  	display: none;
+  	padding-left: 0px;
+  }
+
+/*Display the menu expanding icon to the right*/
+  ul.navigation li.icon {
+    float: right;
+    display: inline-block;
+  }
+
+/*--Responsive settings--*/
+
+/*How the list should be displayed one the expand button is clicked*/
+
+ ul.navigation.responsive{
+  	position: relative;
+  	padding-top:60px;
+  	width: 100%;
+  }
+
+ ul.navigation.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+ ul.navigation.responsive li {
+    float: none;
+    display: inline;
+  }
+
+ ul.navigation.responsive li a {
+    display: block;
+    text-align: center;
+  }
+
+}
+
+/*--End Navigation Bar--*/
+
+
+
+/*-------------------------------END MOBILE-VERSION!----------------------------------*/
+
+
+/*-------------------------------GLOBAL/DESKTOP!--------------------------------------*/
+@media screen and (min-width: 580px) {
+/*Background and html*/
+body {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	background-image: url("../images/background.jpg");
+	color: #FFFFD1;
+	margin: 0;
+	padding:0;
+	height: 100%;
+
+}
+
+header {
 	font-family: 'Roboto Slab', serif;
 	font-size: 40px;
 	color: #FFFFFF;
 	position: absolute;
-	left: 650px;
+	left: 600px;
 	top: 300px;
 	letter-spacing:2px;
 	font-weight:700;
 }
+
 
 /* Buttons */
 .buttons{
@@ -131,8 +203,12 @@ color:black;
 	width: 100%;
 	height: 45px;
 	position: absolute;
-	top: 915px;
-	left: 0;
-	background: #000000;
-	border-top:1px solid
+	bottom:0;
+	background: #333;
+	border-top:1px solid;
 }
+
+
+}
+
+
