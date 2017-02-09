@@ -110,7 +110,7 @@ ul.navigation li.icon {
 	display: none;
 }
 
-/*Once the width is below 580px do the following*/
+/*Once the width is below 480px do the following*/
 @media screen and (max-width:480px) {
 
 /*Hide the links into the menu*/
@@ -157,12 +157,71 @@ ul.navigation li
 /*--End Navigation Bar--*/
 
 
-
 /*-------------------------------END MOBILE-VERSION!----------------------------------*/
 
 
+/*-------------------------------IPAD/TABLET-VERSION!----------------------------------*/
+@media screen and (max-width: 950px) {
+
+header {
+	font-family: 'Roboto Slab', serif;
+	font-size: 28px;
+	color: #FFFFFF;
+	position: absolute;
+	left: 150px;
+	top:300px;
+	letter-spacing:1px;
+	font-weight:200;
+	width: 100%;
+	height: 60px;
+}
+
+.buttons{
+	font-family: 'Roboto Slab', serif;
+	font-size: 34px;
+	position: absolute;
+	left: 220px;
+	top: 450px;
+	
+}
+
+/*Create the navigation bar*/
+ul.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/*Arrange the items in the navigation bar (Move to the right and display inline)*/
+ul.navigation li {
+padding-left:60px;
+display:inline-block;
+}
+
+/*Spacing and organising the list*/
+ul.navigation li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+
+}
+}
+
+
+/*-------------------------------END IPAD/TABLET-VERSION!----------------------------------*/
+
+
+
+
+
 /*-------------------------------GLOBAL/DESKTOP!--------------------------------------*/
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 950px) {
 /*Background and html*/
 body {
 	font-family: "Times New Roman", Times, serif;
