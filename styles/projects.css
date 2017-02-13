@@ -1,4 +1,4 @@
-body {
+html, body {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 14px;
 	background-color: #514b4b;
@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	padding:0;
 	height: 100%;
-	max-width: 100%
+	max-width: 100%;
 }
 
 header {
@@ -65,15 +65,15 @@ ul.navigation li.icon {
 }
 
 /*Footer set to the bottom of the page*/
-#footer {
-	width: 100%;
-	height: 45px;
-	position: fixed;
+footer {
+	width: 104%;
+	padding:15px;
 	bottom:0;
 	background: #333;
 	border-top:1px solid;
 	overflow:hidden;
 }
+
 
 /*-------------------------------------------------------------------------PROJECTS------------------------------------------------------------------------------------*/
 
@@ -104,8 +104,6 @@ ul.navigation li.icon {
 /*---------Front End Report-----------*/
 
 .FE-flipbook .flipbook1{
-	width:922px;
-	height:600px;
 	left:950px;
 	top:-350px;
 }
@@ -124,6 +122,7 @@ ul.navigation li.icon {
 }
 
 
+
 /*-------------------------------------------------------------------------END PROJECTS---------------------------------------------------------------------------------*/
 
 
@@ -137,6 +136,26 @@ ul.navigation li.icon {
 
 /*Whilst the width is below 480px do the following*/
 @media screen and (max-width:530px) {
+
+body{
+	overflow-x: hidden;
+}
+
+a.fuzzy{
+	display:block;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border: 2px solid #ffffff;
+    border-radius: 40%;
+    color:#f5f5f5;
+    text-align:center;
+    background: #464646;
+    font-size:16px;
+    font-weight:bold;
+    left:200px;
+    top:870px;
+}	
 
 /*Hide the links into the menu*/
 ul.navigation li
@@ -192,15 +211,29 @@ header.LightingSystem{
 header.FEReport{
 	color:#FFFFFF;
 	font-size: 10px;
-	top:900px;
-	left:80px;
+	top:1000px;
+	left:90px;
 }
 
 .FE-flipbook .flipbook1{
 	left:-160px;
-	top:400px;
+	top:450px;
 }
 
+#main-wrapper {
+    box-sizing: border-box;
+    min-height: 300%;
+    padding: 0 0 0px;
+    position: relative;
+}
+
+footer {
+    bottom: 0;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
 
 }
 
@@ -223,7 +256,7 @@ ul.navigation {
 
 /*Arrange the items in the navigation bar (Move to the right and display inline)*/
 ul.navigation li {
-padding-left:60px;
+padding-left:80px;
 display:inline-block;
 }
 
@@ -241,24 +274,49 @@ ul.navigation li a {
 
 header.LightingSystem{
 	color:#FFFFFF;
-	font-size: 16px;
+	font-size: 15px;
 	top:100px;
-	left:150px;
+	left:100px;
 }
 
 header.FEReport{
 	color:#FFFFFF;
-	font-size: 16px;
+	font-size: 15px;
 	top:750px;
-	left:240px;
+	left:200px;
+}
+
+.fuzzy-flipbook .flipbook{
+	left:0px;
+	top:150px;
 }
 
 .FE-flipbook .flipbook1{
-	width:922px;
-	height:600px;
-	left:60px;
+	left:0px;
 	top:350px;
 }
+
+
+#main-wrapper {
+    box-sizing: border-box;
+    min-height: 200%;
+    padding: 0 0 0px;
+    position: relative;
+}
+
+footer {
+    bottom: 0;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+/*Links to hide until correct screensize*/
+a.fuzzy{
+	display:none;
+}	
+
 
 }
 
@@ -269,6 +327,10 @@ header.FEReport{
 /*---------------------------------------------------------------------GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 950px) {
+
+body{
+	overflow-x:hidden;
+}
 
 header.LightingSystem{
 	color:#FFFFFF;
@@ -298,6 +360,12 @@ ul.navigation {
 ul.navigation li a:hover {
 	background-color: #555;
 }
+
+/*Links to hide until correct screensize*/
+a.fuzzy{
+	display:none;
+}	
+
 
 }
 

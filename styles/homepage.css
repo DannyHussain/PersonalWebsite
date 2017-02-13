@@ -206,7 +206,7 @@ ul.navigation {
 
 /*Arrange the items in the navigation bar (Move to the right and display inline)*/
 ul.navigation li {
-padding-left:60px;
+padding-left:80px;
 display:inline-block;
 }
 
