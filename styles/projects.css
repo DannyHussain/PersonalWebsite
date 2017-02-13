@@ -3,12 +3,12 @@
 body {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 14px;
-	background-image: url("../images/background2.jpg");
+	background-color: #000000;
 	color: #FFFFFF;
 	margin: 0;
 	padding:0;
 	height: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 	max-width: 100%
 }
 
@@ -28,7 +28,7 @@ header {
 #footer {
 	width: 100%;
 	height: 45px;
-	position: absolute;
+	position: fixed;
 	bottom:0;
 	background: #333;
 	border-top:1px solid;
@@ -192,7 +192,7 @@ ul.navigation li a {
 #footer {
 	width: 130%;
 	height: 45px;
-	position: absolute;
+	position: fixed;
 	bottom:0;
 	background: #333;
 	border-top:1px solid;
@@ -215,7 +215,7 @@ ul.navigation li a {
 body {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 14px;
-	background-image: url("../images/background.jpg");
+	background-image: url("../images/background3.jpg");
 	color: #FFFFFF;
 	margin: 0;
 	padding:0;
@@ -293,14 +293,66 @@ ul.navigation li a:hover {
 #footer {
 	width: 100%;
 	height: 45px;
-	position: absolute;
 	bottom:0;
 	background: #333;
 	border-top:1px solid;
+	position: fixed;
+	overflow: hidden;
 }
 
-
 }
-
 
 /*---------------------------------------------------------------------END GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------PROJECTS--------------------------------------------------------------------------------------------------*/
+
+header.LightingSystem{
+	color:#FFFFFF;
+	font-size: 20px;
+	top:100px;
+	left:150px;
+}
+
+header.FEReport{
+	color:black;
+	font-size: 20px;
+	top:100px;
+	left:1100px;
+}
+
+/*Lighting System*/
+
+
+.fuzzy-flipbook .container{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:auto;
+}
+
+.fuzzy-flipbook .flipbook{
+	width:922px;
+	height:600px;
+	left:-900px;
+	top:-250px;
+}
+
+.fuzzy-flipbook .page{
+	background-size:100% 100%;
+}
+
+
+.fuzzy-flipbook .shadow{
+	-webkit-transition: -webkit-box-shadow 0.5s;
+	-moz-transition: -moz-box-shadow 0.5s;
+	-o-transition: -webkit-box-shadow 0.5s;
+	-ms-transition: -ms-box-shadow 0.5s;
+
+	-webkit-box-shadow:0 0 20px #ccc;
+	-moz-box-shadow:0 0 20px #ccc;
+	-o-box-shadow:0 0 20px #ccc;
+	-ms-box-shadow:0 0 20px #ccc;
+	box-shadow:0 0 20px #ccc;
+}
+

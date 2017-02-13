@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/projects.css">
   <script src="styles/styling.js"></script>
+  <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
+  <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
 </head>
 
 <body>
-
     <ul class="navigation" id="myNav">
 
           <li><a href= "index.html" class = "HomeLink">Home</a></li>
@@ -26,11 +27,101 @@
 
 </ul>
 
-    <div id="footer">
+
+   
+ <header class="LightingSystem">
+    <h2>Automated Fuzzy Inference Lighting System</h2>
+  </header>
+
+    <div class="fuzzy-flipbook">
+  <div class="container">
+    <div class="flipbook">
+      <div style="background-image:url(projects/FuzzyReport/1.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/2.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/3.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/4.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/5.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/6.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/7.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/8.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/9.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/10.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/11.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/12.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/13.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/14.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/15.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/16.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/17.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/18.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/19.jpg)"></div>
+      <div style="background-image:url(projects/FuzzyReport/20.jpg)"></div>
+    </div>
+  </div>
+</div>
+
+
+ <header class="FEReport">
+    <h2>Front-End Web Development Report</h2>
+  </header>
+
+
+<script type="text/javascript">
+
+function loadApp() {
+
+  // Create the flipbook
+
+  $('.flipbook').turn({
+
+      //Width
+      width:822,
+      
+      //Height
+      height:500,
+      
+      //Auto center this flipbook
+      autoCenter: true
+
+  });
+
+   $('.flipbook1').turn({
+
+      // Width
+      width:812,
+      
+      //Height
+      height:500,
+
+      //Auto center this flipbook
+      autoCenter: true
+
+  });
+}
+
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+  test : Modernizr.csstransforms,
+  yep: ['extras/lib/turn.js'],
+  nope: ['extras/lib/turn.html4.min.js'],
+  both: ['css/projects.css'],
+  complete: loadApp
+});
+
+</script>
+
+
+
+
+ <div id="footer">
       <p>
         © Danish Hussain 2017 - All Rights Reserved.
       </p>
     </div>
+
+
 
   </body>
 
