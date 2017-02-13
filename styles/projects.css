@@ -8,7 +8,6 @@ body {
 	margin: 0;
 	padding:0;
 	height: 100%;
-	overflow-x: hidden;
 	max-width: 100%
 }
 
@@ -215,11 +214,12 @@ ul.navigation li a {
 body {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 14px;
-	background-image: url("../images/background3.jpg");
+	background-color: #514b4b;
 	color: #FFFFFF;
 	margin: 0;
 	padding:0;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 header {
@@ -309,33 +309,28 @@ ul.navigation li a:hover {
 
 header.LightingSystem{
 	color:#FFFFFF;
-	font-size: 20px;
+	font-size: 18px;
 	top:100px;
 	left:150px;
 }
 
 header.FEReport{
-	color:black;
-	font-size: 20px;
+	color:#FFFFFF;
+	font-size: 18px;
 	top:100px;
 	left:1100px;
 }
 
-/*Lighting System*/
+/*---------LightingSystem Report-----------*/
 
 
-.fuzzy-flipbook .container{
-	position:absolute;
-	top:50%;
-	left:50%;
-	margin:auto;
-}
+
 
 .fuzzy-flipbook .flipbook{
 	width:922px;
 	height:600px;
-	left:-900px;
-	top:-250px;
+	left:50px;
+	top:150px;
 }
 
 .fuzzy-flipbook .page{
@@ -344,11 +339,6 @@ header.FEReport{
 
 
 .fuzzy-flipbook .shadow{
-	-webkit-transition: -webkit-box-shadow 0.5s;
-	-moz-transition: -moz-box-shadow 0.5s;
-	-o-transition: -webkit-box-shadow 0.5s;
-	-ms-transition: -ms-box-shadow 0.5s;
-
 	-webkit-box-shadow:0 0 20px #ccc;
 	-moz-box-shadow:0 0 20px #ccc;
 	-o-box-shadow:0 0 20px #ccc;
@@ -356,3 +346,25 @@ header.FEReport{
 	box-shadow:0 0 20px #ccc;
 }
 
+/*---------Front End Report-----------*/
+
+
+.FE-flipbook .flipbook1{
+	width:922px;
+	height:600px;
+	left:950px;
+	top:-350px;
+}
+
+.FE-flipbook .page{
+	background-size:100% 100%;
+}
+
+
+.FE-flipbook .shadow{
+	-webkit-box-shadow:0 0 20px #ccc;
+	-moz-box-shadow:0 0 20px #ccc;
+	-o-box-shadow:0 0 20px #ccc;
+	-ms-box-shadow:0 0 20px #ccc;
+	box-shadow:0 0 20px #ccc;
+}
