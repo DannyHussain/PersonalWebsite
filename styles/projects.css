@@ -10,15 +10,20 @@ html, body {
 }
 
 header {
-	font-family: 'Roboto Slab', serif;
-	font-size: 40px;
-	color: #FFFFFF;
 	position: absolute;
-	left: 600px;
-	top: 300px;
-	letter-spacing:2px;
-	font-weight:700;
+	letter-spacing:1px;
+	white-space: nowrap;
 }
+
+footer{
+	width: 100%;
+	height: 45px;
+	bottom:0;
+	background: #333;
+	border-top:1px solid;
+	overflow:hidden;
+}
+
 
 /* Remove default link settings*/
 a {
@@ -64,15 +69,7 @@ ul.navigation li.icon {
 	display: none;
 }
 
-/*Footer set to the bottom of the page*/
-footer {
-	width: 104%;
-	padding:15px;
-	bottom:0;
-	background: #333;
-	border-top:1px solid;
-	overflow:hidden;
-}
+
 
 
 /*-------------------------------------------------------------------------PROJECTS------------------------------------------------------------------------------------*/
@@ -82,9 +79,7 @@ footer {
 /*---------LightingSystem Report-----------*/
 
 .fuzzy-flipbook .flipbook{
-	width:922px;
-	height:600px;
-	left:50px;
+	left:-20px;
 	top:150px;
 }
 
@@ -104,7 +99,7 @@ footer {
 /*---------Front End Report-----------*/
 
 .FE-flipbook .flipbook1{
-	left:950px;
+	left:850px;
 	top:-350px;
 }
 
@@ -197,7 +192,6 @@ ul.navigation li
   }
 
 header.LightingSystem{
-	color:#FFFFFF;
 	font-size: 10px;
 	top:300px;
 	left:30px;
@@ -209,7 +203,6 @@ header.LightingSystem{
 }
 
 header.FEReport{
-	color:#FFFFFF;
 	font-size: 10px;
 	top:1000px;
 	left:90px;
@@ -220,20 +213,10 @@ header.FEReport{
 	top:450px;
 }
 
-#main-wrapper {
-    box-sizing: border-box;
-    min-height: 300%;
-    padding: 0 0 0px;
-    position: relative;
+footer{
+	display:none;
 }
 
-footer {
-    bottom: 0;
-    height: 20px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-}
 
 }
 
@@ -245,22 +228,16 @@ footer {
 
 /*Create the navigation bar*/
 ul.navigation {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
   max-width: 1000px;
   min-width: 1000px;
+  height:40px;
 }
 
 /*Arrange the items in the navigation bar (Move to the right and display inline)*/
 ul.navigation li {
-padding-left:80px;
-display:inline-block;
+padding-left:150px;
 }
 
-/*Spacing and organising the list*/
 ul.navigation li a {
   display: inline-block;
   color: #f2f2f2;
@@ -268,22 +245,21 @@ ul.navigation li a {
   padding: 14px 16px;
   text-decoration: none;
   transition: 0.3s;
-  font-size: 17px;
- 
+  font-size: 14px;
+
 }
 
+
 header.LightingSystem{
-	color:#FFFFFF;
 	font-size: 15px;
 	top:100px;
-	left:100px;
+	left:280px;
 }
 
 header.FEReport{
-	color:#FFFFFF;
 	font-size: 15px;
 	top:750px;
-	left:200px;
+	left:360px;
 }
 
 .fuzzy-flipbook .flipbook{
@@ -296,27 +272,14 @@ header.FEReport{
 	top:350px;
 }
 
-
-#main-wrapper {
-    box-sizing: border-box;
-    min-height: 200%;
-    padding: 0 0 0px;
-    position: relative;
-}
-
-footer {
-    bottom: 0;
-    height: 20px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-}
-
 /*Links to hide until correct screensize*/
 a.fuzzy{
 	display:none;
 }	
 
+footer{
+	display:none;
+}
 
 }
 
@@ -336,22 +299,18 @@ header.LightingSystem{
 	color:#FFFFFF;
 	font-size: 18px;
 	top:100px;
-	left:150px;
+	left:200px;
 }
 
 header.FEReport{
 	color:#FFFFFF;
 	font-size: 18px;
 	top:100px;
-	left:1100px;
+	left:1150px;
 }
 
+
 ul.navigation {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
   max-width: 2000px;
   min-width: 2000px;
 }
@@ -365,7 +324,6 @@ ul.navigation li a:hover {
 a.fuzzy{
 	display:none;
 }	
-
 
 }
 

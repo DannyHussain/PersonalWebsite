@@ -1,28 +1,18 @@
-/*---------------------------------------------------------------------MOBILE-VERSION!----------------------------------------------------------------------------------*/
-
 body {
-	font-family: "Times New Roman", Times, serif;
 	font-size: 14px;
-	background-image: url("../images/background2.jpg");
+	background-image: url("../images/background.jpg");
 	color: #FFFFFF;
 	margin: 0;
 	padding:0;
 	height: 100%;
 	overflow: hidden;
-	max-width: 100%
 }
 
 header {
-	font-family: 'Roboto Slab', serif;
 	font-size: 15px;
-	color: #FFFFFF;
 	position: absolute;
 	left: 10px;
 	top:-10px;
-	letter-spacing:1px;
-	font-weight:200;
-	width: 100%;
-	height: 60px;
 }
 
 #footer {
@@ -37,7 +27,6 @@ header {
 
 /*--Button Links--*/
 .buttons{
-	font-family: 'Roboto Slab', serif;
 	font-size: 34px;
 	position: absolute;
 	left: 20px;
@@ -111,8 +100,13 @@ ul.navigation li.icon {
 	display: none;
 }
 
+
+
+/*---------------------------------------------------------------------MOBILE-VERSION!----------------------------------------------------------------------------------*/
+
 /*Whilst the width is below 480px do the following*/
 @media screen and (max-width:530px) {
+
 
 /*Hide the links into the menu*/
 ul.navigation li
@@ -155,8 +149,6 @@ ul.navigation li
 
 }
 
-/*--End Navigation Bar--*/
-
 
 /*---------------------------------------------------------------------END MOBILE-VERSION!----------------------------------------------------------------------------------*/
 
@@ -168,70 +160,25 @@ ul.navigation li
 /*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
 @media screen and (min-width: 530px) and (max-width: 940px) {
 
-
 header {
-	font-family: 'Roboto Slab', serif;
 	font-size: 28px;
-	color: #FFFFFF;
-	position: absolute;
 	left: 150px;
 	top:300px;
-	letter-spacing:1px;
-	font-weight:200;
-	width: 100%;
-	height: 60px;
 }
 
 .buttons{
-	font-family: 'Roboto Slab', serif;
-	font-size: 34px;
-	position: absolute;
 	left: 220px;
 	top: 450px;
-	max-width: 500px;
-    min-width: 500px;
-	
 }
 
-/*Create the navigation bar*/
 ul.navigation {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
   max-width: 1000px;
   min-width: 1000px;
 }
 
-/*Arrange the items in the navigation bar (Move to the right and display inline)*/
 ul.navigation li {
 padding-left:80px;
-display:inline-block;
 }
-
-/*Spacing and organising the list*/
-ul.navigation li a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
- 
-}
-
-#footer {
-	width: 130%;
-	height: 45px;
-	position: absolute;
-	bottom:0;
-	background: #333;
-	border-top:1px solid;
-	overflow:hidden;
-}
-
 
 }
 
@@ -244,48 +191,21 @@ ul.navigation li a {
 /*---------------------------------------------------------------------GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 950px) {
-/*Background and html*/
-body {
-	font-family: "Times New Roman", Times, serif;
-	font-size: 14px;
-	background-image: url("../images/background.jpg");
-	color: #FFFFFF;
-	margin: 0;
-	padding:0;
-	height: 100%;
-}
 
 header {
-	font-family: 'Roboto Slab', serif;
 	font-size: 40px;
-	color: #FFFFFF;
-	position: absolute;
 	left: 600px;
 	top: 300px;
-	letter-spacing:2px;
 	font-weight:700;
 }
 
 
 /* Buttons */
 .buttons{
-	font-family: 'Roboto Slab', serif;
-	font-size: 34px;
-	position: absolute;
 	left: 750px;
 	top: 500px;
-	max-width: 500px;
-    min-width: 500px;
-
 }
 
-
-a.CV{
-	color: #FFFFFF;
-	border: 4px solid white;
-	padding:20px;
-	box-sizing: border-box;
-}
 
 a.CV:hover{
 background-color: #FFFFFF;
@@ -293,28 +213,11 @@ color:black;
 }
 
 
-
-a.Social{
-	color: #FFFFFF;
-	border: 4px solid white;
-	padding:20px;
-	box-sizing: border-box;
-}
-
 a.Social:hover{
 background-color: #FFFFFF;
 color:black;
 }
 
-ul.navigation {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  max-width: 2000px;
-  min-width: 2000px;
-}
 
 /*Adding a hover effect*/
 ul.navigation li a:hover {
@@ -322,19 +225,7 @@ ul.navigation li a:hover {
 }
 
 
-/*Footer*/
-#footer {
-	width: 100%;
-	height: 45px;
-	position: absolute;
-	bottom:0;
-	background: #333;
-	border-top:1px solid;
-}
-
 
 }
-
 
 /*---------------------------------------------------------------------END GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
-
