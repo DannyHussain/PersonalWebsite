@@ -32,7 +32,7 @@ header {
 	left: 20px;
 	top: 280px;
 	max-width: 500px;
-    min-width: 500px;
+	min-width: 500px;
 }
 
 a.CV{
@@ -68,29 +68,29 @@ a {
 
 /*Create the navigation bar*/
 ul.navigation {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  border-bottom:1px solid;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	border-bottom:1px solid;
 }
 
 /*Arrange the items in the navigation bar (Move to the right and display inline)*/
 ul.navigation li {
-padding-left:300px;
-display:inline-block;
+	padding-left:300px;
+	display:inline-block;
 }
 
 /*Spacing and organising the list*/
 ul.navigation li a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
+	display: inline-block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 17px;
 
 }
 
@@ -104,48 +104,48 @@ ul.navigation li.icon {
 
 /*---------------------------------------------------------------------MOBILE-VERSION!----------------------------------------------------------------------------------*/
 
-/*Whilst the width is below 480px do the following*/
+/*Whilst the width is below 530px do the following*/
 @media screen and (max-width:530px) {
 
 
-/*Hide the links into the menu*/
-ul.navigation li
-  {
-  	display: none;
-  	padding-left: 0px;
-  }
+	/*Hide the links into the menu*/
+	ul.navigation li
+	{
+		display: none;
+		padding-left: 0px;
+	}
 
-/*Display the menu expanding icon to the right*/
-  ul.navigation li.icon {
-    float: right;
-    display: inline-block;
-  }
+	/*Display the menu expanding icon to the right*/
+	ul.navigation li.icon {
+		float: right;
+		display: inline-block;
+	}
 
-/*--Responsive settings--*/
+	/*--Responsive settings--*/
 
-/*How the list should be displayed one the expand button is clicked*/
+	/*How the list should be displayed one the expand button is clicked*/
 
- ul.navigation.responsive{
-  	position: relative;
-  	padding-top:60px;
-  	width: 100%;
-  }
+	ul.navigation.responsive{
+		position: relative;
+		padding-top:60px;
+		width: 100%;
+	}
 
- ul.navigation.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+	ul.navigation.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
 
- ul.navigation.responsive li {
-    float: none;
-    display: inline;
-  }
+	ul.navigation.responsive li {
+		float: none;
+		display: inline;
+	}
 
- ul.navigation.responsive li a {
-    display: block;
-    text-align: center;
-  }
+	ul.navigation.responsive li a {
+		display: block;
+		text-align: center;
+	}
 
 }
 
@@ -160,25 +160,25 @@ ul.navigation li
 /*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
 @media screen and (min-width: 530px) and (max-width: 940px) {
 
-header {
-	font-size: 28px;
-	left: 150px;
-	top:300px;
-}
+	header {
+		font-size: 28px;
+		left: 150px;
+		top:300px;
+	}
 
-.buttons{
-	left: 220px;
-	top: 450px;
-}
+	.buttons{
+		left: 220px;
+		top: 450px;
+	}
 
-ul.navigation {
-  max-width: 1000px;
-  min-width: 1000px;
-}
+	ul.navigation {
+		max-width: 1000px;
+		min-width: 1000px;
+	}
 
-ul.navigation li {
-padding-left:80px;
-}
+	ul.navigation li {
+		padding-left:80px;
+	}
 
 }
 
@@ -192,37 +192,37 @@ padding-left:80px;
 
 @media screen and (min-width: 950px) {
 
-header {
-	font-size: 40px;
-	left: 600px;
-	top: 300px;
-	font-weight:700;
-}
+	header {
+		font-size: 40px;
+		left: 600px;
+		top: 300px;
+		font-weight:700;
+	}
 
 
-/* Buttons */
-.buttons{
-	left: 750px;
-	top: 500px;
-}
+	/* Buttons */
+	.buttons{
+		left: 750px;
+		top: 500px;
+	}
 
 
-a.CV:hover{
-background-color: #FFFFFF;
-color:black;
-}
+	a.CV:hover{
+		background-color: #FFFFFF;
+		color:black;
+	}
 
 
-a.Social:hover{
-background-color: #FFFFFF;
-color:black;
-}
+	a.Social:hover{
+		background-color: #FFFFFF;
+		color:black;
+	}
 
 
-/*Adding a hover effect*/
-ul.navigation li a:hover {
-	background-color: #555;
-}
+	/*Adding a hover effect*/
+	ul.navigation li a:hover {
+		background-color: #555;
+	}
 
 
 

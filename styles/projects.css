@@ -1,5 +1,4 @@
-html, body {
-	font-family: "Times New Roman", Times, serif;
+body {
 	font-size: 14px;
 	background-color: #514b4b;
 	color: #FFFFFF;
@@ -84,12 +83,12 @@ ul.navigation li.icon {
 	top:150px;
 }
 
-.fuzzy-flipbook .page{
+.fuzzy-flipbook .page, .FE-flipbook .page {
 	background-size:100% 100%;
 }
 
 
-.fuzzy-flipbook .shadow{
+.fuzzy-flipbook .shadow, .FE-flipbook .shadow{
 	-webkit-box-shadow:0 0 20px #ccc;
 	-moz-box-shadow:0 0 20px #ccc;
 	-o-box-shadow:0 0 20px #ccc;
@@ -104,20 +103,6 @@ ul.navigation li.icon {
 	top:-350px;
 }
 
-.FE-flipbook .page{
-	background-size:100% 100%;
-}
-
-
-.FE-flipbook .shadow{
-	-webkit-box-shadow:0 0 20px #ccc;
-	-moz-box-shadow:0 0 20px #ccc;
-	-o-box-shadow:0 0 20px #ccc;
-	-ms-box-shadow:0 0 20px #ccc;
-	box-shadow:0 0 20px #ccc;
-}
-
-
 
 /*-------------------------------------------------------------------------END PROJECTS---------------------------------------------------------------------------------*/
 
@@ -130,28 +115,13 @@ ul.navigation li.icon {
 
 /*---------------------------------------------------------------------MOBILE-VERSION!----------------------------------------------------------------------------------*/
 
-/*Whilst the width is below 480px do the following*/
+/*Whilst the width is below 530px do the following*/
 @media screen and (max-width:530px) {
 
 body{
 	overflow-x: hidden;
 }
 
-a.fuzzy{
-	display:block;
-    width:50px;
-    height:50px;
-    line-height:50px;
-    border: 2px solid #ffffff;
-    border-radius: 40%;
-    color:#f5f5f5;
-    text-align:center;
-    background: #464646;
-    font-size:16px;
-    font-weight:bold;
-    left:200px;
-    top:870px;
-}	
 
 /*Hide the links into the menu*/
 ul.navigation li
@@ -193,30 +163,56 @@ ul.navigation li
   }
 
 header.LightingSystem{
-	font-size: 10px;
+	font-size:11px;
 	top:300px;
-	left:30px;
+	left:40px;
 }
 
 .fuzzy-flipbook .flipbook{
-	left:-160px;
+	left:-100px;
 	top:300px;
 }
+
 
 header.FEReport{
 	font-size: 10px;
 	top:1000px;
-	left:90px;
+	left:110px;
 }
 
 .FE-flipbook .flipbook1{
-	left:-160px;
+	left:-100px;
 	top:450px;
+	padding-bottom: 20px;
 }
 
 footer{
 	display:none;
 }
+
+/**Project Links**/
+
+a.fuzzy, a.fe{
+	display:block;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border: 2px solid #ffffff;
+    border-radius: 40%;
+    color:#f5f5f5;
+    text-align:center;
+    background: #464646;
+    font-size:16px;
+    font-weight:bold;
+    left:220px;
+    top:870px;
+}	
+
+a.fe{
+    left:220px;
+    top:1020px;
+}	
+
 
 
 }
@@ -227,40 +223,30 @@ footer{
 /*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
 @media screen and (min-width: 530px) and (max-width: 940px) {
 
-/*Create the navigation bar*/
+body{
+	overflow-x: hidden;
+}
+
 ul.navigation {
   max-width: 1000px;
   min-width: 1000px;
-  height:40px;
 }
 
-/*Arrange the items in the navigation bar (Move to the right and display inline)*/
 ul.navigation li {
-padding-left:150px;
-}
-
-ul.navigation li a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 14px;
-
+padding-left:80px;
 }
 
 
 header.LightingSystem{
 	font-size: 15px;
 	top:100px;
-	left:280px;
+	left:100px;
 }
 
 header.FEReport{
 	font-size: 15px;
 	top:750px;
-	left:360px;
+	left:160px;
 }
 
 .fuzzy-flipbook .flipbook{
@@ -271,10 +257,11 @@ header.FEReport{
 .FE-flipbook .flipbook1{
 	left:0px;
 	top:350px;
+	padding-bottom: 10px;
 }
 
 /*Links to hide until correct screensize*/
-a.fuzzy{
+a.fuzzy, a.fe{
 	display:none;
 }	
 
@@ -292,9 +279,6 @@ footer{
 
 @media screen and (min-width: 950px) {
 
-body{
-	overflow-x:hidden;
-}
 
 header.LightingSystem{
 	color:#FFFFFF;
@@ -322,7 +306,7 @@ ul.navigation li a:hover {
 }
 
 /*Links to hide until correct screensize*/
-a.fuzzy{
+a.fuzzy, a.fe{
 	display:none;
 }	
 
