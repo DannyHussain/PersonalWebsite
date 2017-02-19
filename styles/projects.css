@@ -140,7 +140,8 @@ ul.navigation li.icon {
 /*---------------------------------------------------------------------MOBILE-VERSION!----------------------------------------------------------------------------------*/
 
 /*Whilst the width is below 530px do the following*/
-@media screen and (max-width:530px) {
+@media screen and (max-width:600px) {
+
 
 	body{
 		overflow-x: hidden;
@@ -155,6 +156,10 @@ ul.navigation li.icon {
 		display:none;
 	}
 
+	ul.navigation {
+		min-width:500px;
+		max-width: 700px;
+	}
 
 	/*Hide the links into the menu*/
 	ul.navigation li
@@ -293,7 +298,7 @@ ul.navigation li.icon {
 
 
 /*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
-@media screen and (min-width: 530px) and (max-width: 940px) {
+@media screen and (min-width: 600px) and (max-width: 940px) {
 
 	body{
 		overflow-x: hidden;
@@ -384,7 +389,7 @@ ul.navigation li.icon {
 
 /*---------------------------------------------------------------------GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 940px) {
 
 
 	/*------Header positioning for each project on IPAD-----*/
