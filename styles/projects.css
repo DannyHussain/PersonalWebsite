@@ -1,3 +1,4 @@
+/*General styles that will be applied initially*/
 body {
 	font-size: 14px;
 	background-color: #514b4b;
@@ -9,9 +10,12 @@ body {
 }
 
 header {
+	color:#FFFFFF;
+	font-size: 18px;
 	position: absolute;
 	letter-spacing:1px;
 	white-space: nowrap;
+	text-decoration: underline;
 }
 
 footer{
@@ -38,29 +42,29 @@ a {
 
 /*Create the navigation bar*/
 ul.navigation {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  border-bottom:1px solid;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	border-bottom:1px solid;
 }
 
 /*Arrange the items in the navigation bar (Move to the right and display inline)*/
 ul.navigation li {
-padding-left:300px;
-display:inline-block;
+	padding-left:300px;
+	display:inline-block;
 }
 
 /*Spacing and organising the list*/
 ul.navigation li a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
+	display: inline-block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 17px;
 
 }
 
@@ -75,6 +79,21 @@ ul.navigation li.icon {
 /*-------------------------------------------------------------------------PROJECTS------------------------------------------------------------------------------------*/
 
 
+/*----Settings for each flipbook, also a shadow effect to give it a glow*/
+
+.fuzzy-flipbook .page, .FE-flipbook .page, .M2M-flipbook .page, .RP-flipbook .page {
+	background-size:100% 100%;
+}
+
+
+.fuzzy-flipbook .shadow, .FE-flipbook .shadow, .M2M-flipbook .shadow, .RP-flipbook .shadow{
+	-webkit-box-shadow:0 0 20px #ccc;
+	-moz-box-shadow:0 0 20px #ccc;
+	-o-box-shadow:0 0 20px #ccc;
+	-ms-box-shadow:0 0 20px #ccc;
+	box-shadow:0 0 20px #ccc;
+}
+
 
 /*---------LightingSystem Report-----------*/
 
@@ -83,18 +102,7 @@ ul.navigation li.icon {
 	top:150px;
 }
 
-.fuzzy-flipbook .page, .FE-flipbook .page {
-	background-size:100% 100%;
-}
 
-
-.fuzzy-flipbook .shadow, .FE-flipbook .shadow{
-	-webkit-box-shadow:0 0 20px #ccc;
-	-moz-box-shadow:0 0 20px #ccc;
-	-o-box-shadow:0 0 20px #ccc;
-	-ms-box-shadow:0 0 20px #ccc;
-	box-shadow:0 0 20px #ccc;
-}
 
 /*---------Front End Report-----------*/
 
@@ -103,9 +111,25 @@ ul.navigation li.icon {
 	top:-350px;
 }
 
+/*---------M2M Report-----------*/
+
+.M2M-flipbook .flipbook2{
+	left:100px;
+	top:-150px;
+}
+
+
+/*---------Internet Control Research Paper-----------*/
+
+.RP-flipbook .flipbook3{
+	top:-650px;
+	left:1000px
+	;
+}
+
+
 
 /*-------------------------------------------------------------------------END PROJECTS---------------------------------------------------------------------------------*/
-
 
 
 
@@ -118,157 +142,240 @@ ul.navigation li.icon {
 /*Whilst the width is below 530px do the following*/
 @media screen and (max-width:530px) {
 
-body{
-	overflow-x: hidden;
+	body{
+		overflow-x: hidden;
+	}
+
+	header{
+		font-size:11px;
+	}
+
+
+	footer{
+		display:none;
+	}
+
+
+	/*Hide the links into the menu*/
+	ul.navigation li
+	{
+		display: none;
+		padding-left: 0px;
+	}
+
+	/*Display the menu expanding icon to the right*/
+	ul.navigation li.icon {
+		float: right;
+		display: inline-block;
+	}
+
+	/*--Responsive settings--*/
+
+	/*How the list should be displayed one the expand button is clicked*/
+
+	ul.navigation.responsive{
+		position: relative;
+		padding-top:60px;
+		width: 100%;
+	}
+
+	ul.navigation.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	ul.navigation.responsive li {
+		float: none;
+		display: inline;
+	}
+
+	ul.navigation.responsive li a {
+		display: block;
+		text-align: center;
+	}
+
+	/*------Header positioning for each projects-----*/
+
+	/*Fuzzy Light System*/
+	header.LightingSystem{
+		top:300px;
+		left:40px;
+	}
+
+
+	/*Front End Report*/
+	header.FEReport{
+		top:1000px;
+		left:110px;
+	}
+
+	/*M2M Report*/
+	header.M2MReport{
+		top:1700px;
+		left:190px;
+	}
+
+	/*InternetControlReport*/
+	header.RPReport{
+		top:2450px;
+		left:120px;
+	}
+
+	/*------Project paper positioning for each-----*/
+
+	/*Fuzzy Light System*/
+	.fuzzy-flipbook .flipbook{
+		left:-100px;
+		top:300px;
+	}
+
+	/*Front End Report*/
+	.FE-flipbook .flipbook1{
+		left:-100px;
+		top:450px;
+
+	}
+
+	/*M2M Report*/
+	.M2M-flipbook .flipbook2{
+		left:-100px;
+		top:600px;
+		padding-bottom: 20px;
+	}
+
+	/*InternetControlReport*/
+	.RP-flipbook .flipbook3{
+		left:-100px;
+		top:770px;
+		padding-bottom: 20px;
+	}
+
+
+
+	/**Creating a link for each project to be viewed as a PDF on Mobiles**/
+
+	a.fuzzy, a.fe, a.M2M, a.RP{
+		display:block;
+		width:50px;
+		height:50px;
+		line-height:50px;
+		border: 2px solid #ffffff;
+		border-radius: 40%;
+		color:#f5f5f5;
+		text-align:center;
+		background: #464646;
+		font-size:16px;
+		font-weight:bold;
+		left:220px;
+		top:870px;
+	}	
+
+	a.fe{
+		left:220px;
+		top:1020px;
+	}	
+
+	a.M2M{
+		left:220px;
+		top:1170px;
+	}
+
+	a.RP{
+		left:220px;
+		top:1340px;
+	}
+
+
 }
 
-
-/*Hide the links into the menu*/
-ul.navigation li
-  {
-  	display: none;
-  	padding-left: 0px;
-  }
-
-/*Display the menu expanding icon to the right*/
-  ul.navigation li.icon {
-    float: right;
-    display: inline-block;
-  }
-
-/*--Responsive settings--*/
-
-/*How the list should be displayed one the expand button is clicked*/
-
- ul.navigation.responsive{
-  	position: relative;
-  	padding-top:60px;
-  	width: 100%;
-  }
-
- ul.navigation.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
- ul.navigation.responsive li {
-    float: none;
-    display: inline;
-  }
-
- ul.navigation.responsive li a {
-    display: block;
-    text-align: center;
-  }
-
-header.LightingSystem{
-	font-size:11px;
-	top:300px;
-	left:40px;
-}
-
-.fuzzy-flipbook .flipbook{
-	left:-100px;
-	top:300px;
-}
-
-
-header.FEReport{
-	font-size: 10px;
-	top:1000px;
-	left:110px;
-}
-
-.FE-flipbook .flipbook1{
-	left:-100px;
-	top:450px;
-	padding-bottom: 20px;
-}
-
-footer{
-	display:none;
-}
-
-/**Project Links**/
-
-a.fuzzy, a.fe{
-	display:block;
-    width:50px;
-    height:50px;
-    line-height:50px;
-    border: 2px solid #ffffff;
-    border-radius: 40%;
-    color:#f5f5f5;
-    text-align:center;
-    background: #464646;
-    font-size:16px;
-    font-weight:bold;
-    left:220px;
-    top:870px;
-}	
-
-a.fe{
-    left:220px;
-    top:1020px;
-}	
-
-
-
-}
-
-/*---------------------------------------------------------------------END MOBILE-VERSION!----------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------END MOBILE-VERSION!-----------------------------------------------------------------------------------*/
 
 
 /*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
 @media screen and (min-width: 530px) and (max-width: 940px) {
 
-body{
-	overflow-x: hidden;
-}
+	body{
+		overflow-x: hidden;
+	}
 
-ul.navigation {
-  max-width: 1000px;
-  min-width: 1000px;
-}
+	header{
+		font-size: 15px;
 
-ul.navigation li {
-padding-left:80px;
-}
+	}
 
+	footer{
+		display:none;
+	}
 
-header.LightingSystem{
-	font-size: 15px;
-	top:100px;
-	left:100px;
-}
+	ul.navigation {
+		max-width: 1000px;
+		min-width: 1000px;
+	}
 
-header.FEReport{
-	font-size: 15px;
-	top:750px;
-	left:160px;
-}
+	ul.navigation li {
+		padding-left:80px;
+	}
 
-.fuzzy-flipbook .flipbook{
-	left:0px;
-	top:150px;
-}
+	/*------Header positioning for each project on IPAD-----*/
 
-.FE-flipbook .flipbook1{
-	left:0px;
-	top:350px;
-	padding-bottom: 10px;
-}
+	/*Fuzzy Light System*/
+	header.LightingSystem{
+		top:100px;
+		left:80px;
+	}
 
-/*Links to hide until correct screensize*/
-a.fuzzy, a.fe{
-	display:none;
-}	
+	/*Front End Report*/
+	header.FEReport{
+		top:750px;
+		left:160px;
+	}
 
-footer{
-	display:none;
-}
+	/*M2M Report*/
+	header.M2MReport{
+		top:1450px;
+		left:280px;
+	}
 
+	/*InternetControlReport*/
+	header.RPReport{
+		top:2100px;
+		left:170px;
+	}
+
+	/*------Project paper positioning for each on IPAD-----*/
+
+	/*Fuzzy Light System*/
+	.fuzzy-flipbook .flipbook{
+		left:0px;
+		top:150px;
+	}
+
+	/*Front End Report*/
+	.FE-flipbook .flipbook1{
+		left:0px;
+		top:350px;
+	}
+
+	/*M2M Report*/
+	.M2M-flipbook .flipbook2{
+		left:0px;
+		top:500px;
+	}
+
+	/*InternetControlReport*/
+	.RP-flipbook .flipbook3{
+		left:0px;
+		top:650px;
+		padding-bottom: 10px;
+	}
+
+	/*Links to hide until correct screensize*/
+	a.fuzzy, a.fe, a.M2M, a.RP{
+		display:none;
+	}	
+
+	
 }
 
 /*---------------------------------------------------------------------END IPAD/TABLET-VERSION!----------------------------------------------------------------------------------*/
@@ -280,35 +387,49 @@ footer{
 @media screen and (min-width: 950px) {
 
 
-header.LightingSystem{
-	color:#FFFFFF;
-	font-size: 18px;
-	top:100px;
-	left:150px;
-}
+	/*------Header positioning for each project on IPAD-----*/
 
-header.FEReport{
-	color:#FFFFFF;
-	font-size: 18px;
-	top:100px;
-	left:1100px;
-}
+	/*Fuzzy Light System*/
+	header.LightingSystem{
+		top:100px;
+		left:150px;
+	}
+
+	/*Front End Report*/
+	header.FEReport{
+		top:100px;
+		left:1120px;
+	}
+
+	/*M2M Report*/
+	header.M2MReport{
+		top:800px;
+		left:360px;
+	}
+
+	/*InternetControlReport*/
+	header.RPReport{
+		top:800px;
+		left:1150px;
+	}
 
 
-ul.navigation {
-  max-width: 2000px;
-  min-width: 2000px;
-}
+	/*-----Navigation settings for Desktop-----*/
 
-/*Adding a hover effect*/
-ul.navigation li a:hover {
-	background-color: #555;
-}
+	ul.navigation {
+		max-width: 2000px;
+		min-width: 2000px;
+	}
 
-/*Links to hide until correct screensize*/
-a.fuzzy, a.fe{
-	display:none;
-}	
+	/*Adding a hover effect*/
+	ul.navigation li a:hover {
+		background-color: #555;
+	}
+
+	/*Links to hide until correct screensize*/
+	a.fuzzy, a.fe, a.M2M, a.RP{
+		display:none;
+	}	
 
 }
 
