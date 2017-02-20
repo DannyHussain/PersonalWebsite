@@ -1,4 +1,4 @@
-/*General styles that will be applied initially*/
+/*General styles that will be applied*/
 body {
 	font-size: 14px;
 	background-color: #514b4b;
@@ -6,7 +6,6 @@ body {
 	margin: 0;
 	padding:0;
 	height: 100%;
-	max-width: 100%;
 }
 
 header {
@@ -79,14 +78,15 @@ ul.navigation li.icon {
 /*-------------------------------------------------------------------------PROJECTS------------------------------------------------------------------------------------*/
 
 
-/*----Settings for each flipbook, also a shadow effect to give it a glow*/
+/*Settings for each flipbook, also a shadow effect to give it a glow*/
 
-.fuzzy-flipbook .page, .FE-flipbook .page, .M2M-flipbook .page, .RP-flipbook .page {
+.project-flipbook .page {
+
 	background-size:100% 100%;
 }
 
 
-.fuzzy-flipbook .shadow, .FE-flipbook .shadow, .M2M-flipbook .shadow, .RP-flipbook .shadow{
+.project-flipbook .shadow{
 	-webkit-box-shadow:0 0 20px #ccc;
 	-moz-box-shadow:0 0 20px #ccc;
 	-o-box-shadow:0 0 20px #ccc;
@@ -95,43 +95,59 @@ ul.navigation li.icon {
 }
 
 
+/*Flipbook positioning*/
+
 /*---------LightingSystem Report-----------*/
 
-.fuzzy-flipbook .flipbook{
-	left:100px;
+.project-flipbook .flipbook{
 	top:150px;
+	left:100px;
 }
 
 
 
 /*---------Front End Report-----------*/
 
-.FE-flipbook .flipbook1{
-	left:1000px;
+.project-flipbook .flipbook1{
 	top:-350px;
+	left:1000px;
 }
 
 /*---------M2M Report-----------*/
 
-.M2M-flipbook .flipbook2{
-	left:100px;
+.project-flipbook .flipbook2{
 	top:-150px;
+	left:100px;
 }
 
 
 /*---------Internet Control Research Paper-----------*/
 
-.RP-flipbook .flipbook3{
+.project-flipbook .flipbook3{
 	top:-650px;
-	left:1000px
-	;
+	left:1000px;
 }
 
+/*-----------Test Cases Report------------*/
 
+.project-flipbook .flipbook4{
+	top:-450px;
+	left:100px;
+}
 
-/*-------------------------------------------------------------------------END PROJECTS---------------------------------------------------------------------------------*/
+/*-----------RockPaperScissors Report------------*/
 
+.project-flipbook .flipbook5{
+	top:-950px;
+	left:1020px;
+}
 
+/*-----------PRINCE2 Report------------*/
+
+.project-flipbook .flipbook6{
+	top:-750px;
+	left:100px;
+}
 
 
 
@@ -139,13 +155,9 @@ ul.navigation li.icon {
 
 /*---------------------------------------------------------------------MOBILE-VERSION!----------------------------------------------------------------------------------*/
 
-/*Whilst the width is below 530px do the following*/
+/*Whilst the width is below 600px do the following*/
 @media screen and (max-width:600px) {
 
-
-	body{
-		overflow-x: hidden;
-	}
 
 	header{
 		font-size:11px;
@@ -182,7 +194,9 @@ ul.navigation li.icon {
 		position: relative;
 		padding-top:60px;
 		width: 100%;
+		background-color: rgba(255,255,255,0.1);
 	}
+
 
 	ul.navigation.responsive li.icon {
 		position: absolute;
@@ -212,7 +226,7 @@ ul.navigation li.icon {
 	/*Front End Report*/
 	header.FEReport{
 		top:1000px;
-		left:110px;
+		left:100px;
 	}
 
 	/*M2M Report*/
@@ -222,45 +236,84 @@ ul.navigation li.icon {
 	}
 
 	/*InternetControlReport*/
-	header.RPReport{
+	header.ICRPReport{
 		top:2450px;
+		left:110px;
+	}
+
+	/*TestCases*/
+	header.TCReport{
+		top:3150px;
+		left:170px;
+	}
+
+	/*RPSReport*/
+	header.RPSReport{
+		top:3870px;
+		left:140px;
+	}
+
+	/*PRINCE2Report*/
+	header.PRINCEReport{
+		top:4600px;
 		left:120px;
 	}
+
+
 
 	/*------Project paper positioning for each-----*/
 
 	/*Fuzzy Light System*/
-	.fuzzy-flipbook .flipbook{
+	.project-flipbook .flipbook{
 		left:-100px;
 		top:300px;
 	}
 
 	/*Front End Report*/
-	.FE-flipbook .flipbook1{
+	.project-flipbook .flipbook1{
 		left:-100px;
 		top:450px;
 
 	}
 
 	/*M2M Report*/
-	.M2M-flipbook .flipbook2{
+	.project-flipbook .flipbook2{
 		left:-100px;
 		top:600px;
 		padding-bottom: 20px;
 	}
 
 	/*InternetControlReport*/
-	.RP-flipbook .flipbook3{
+	.project-flipbook .flipbook3{
 		left:-100px;
 		top:770px;
-		padding-bottom: 20px;
 	}
+
+	/*Test Cases Report*/
+	.project-flipbook .flipbook4{
+		left:-100px;
+		top:920px;
+	}
+
+	/*RockPaperScissors Report*/
+	.project-flipbook .flipbook5{
+		left:-100px;
+		top:1070px;
+	}
+
+	/*PRINCE2 Report*/
+	.project-flipbook .flipbook6{
+		left:-100px;
+		top:1230px;
+		padding-bottom: 30px;
+	}
+
 
 
 
 	/**Creating a link for each project to be viewed as a PDF on Mobiles**/
 
-	a.fuzzy, a.fe, a.M2M, a.RP{
+	a.fuzzy, a.fe, a.M2M, a.ICRP, a.TC, a.RPS, a.PRINCE2{
 		display:block;
 		width:50px;
 		height:50px;
@@ -277,27 +330,37 @@ ul.navigation li.icon {
 	}	
 
 	a.fe{
-		left:220px;
 		top:1020px;
 	}	
 
 	a.M2M{
-		left:220px;
 		top:1170px;
 	}
 
-	a.RP{
-		left:220px;
+	a.ICRP{
 		top:1340px;
+	}
+
+	a.TC{
+		top:1500px;
+	}
+
+	a.RPS{
+		top:1650px;
+	}
+
+	a.PRINCE2{
+		top:1800px;
 	}
 
 
 }
 
-/*---------------------------------------------------------------------END MOBILE-VERSION!-----------------------------------------------------------------------------------*/
 
 
 /*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
+
+/*Whilst the width is between 600px and 940px do the following*/
 @media screen and (min-width: 600px) and (max-width: 940px) {
 
 	body{
@@ -343,56 +406,94 @@ ul.navigation li.icon {
 	}
 
 	/*InternetControlReport*/
-	header.RPReport{
+	header.ICRPReport{
 		top:2100px;
 		left:170px;
 	}
 
+	/*TestCases*/
+	header.TCReport{
+		top:2750px;
+		left:250px;
+	}
+
+	/*RPSReport*/
+	header.RPSReport{
+		top:3400px;
+		left:200px;
+	}
+
+	/*PRINCE2Report*/
+	header.PRINCEReport{
+		top:4050px;
+		left:180px;
+	}
+
+
+
 	/*------Project paper positioning for each on IPAD-----*/
 
 	/*Fuzzy Light System*/
-	.fuzzy-flipbook .flipbook{
+	.project-flipbook .flipbook{
 		left:0px;
 		top:150px;
 	}
 
 	/*Front End Report*/
-	.FE-flipbook .flipbook1{
+	.project-flipbook .flipbook1{
 		left:0px;
 		top:350px;
 	}
 
 	/*M2M Report*/
-	.M2M-flipbook .flipbook2{
+	.project-flipbook .flipbook2{
 		left:0px;
 		top:500px;
 	}
 
 	/*InternetControlReport*/
-	.RP-flipbook .flipbook3{
+	.project-flipbook .flipbook3{
 		left:0px;
 		top:650px;
-		padding-bottom: 10px;
 	}
 
+	/*Test Cases Report*/
+	.project-flipbook .flipbook4{
+		left:0px;
+		top:800px;
+	}
+
+	/*RockPaperScissors Report*/
+	.project-flipbook .flipbook5{
+		left:0px;
+		top:950px;
+	}
+
+	/*PRINCE2 Report*/
+	.project-flipbook .flipbook6{
+		left:0px;
+		top:1100px;
+		padding-bottom: 30px;
+	}
+
+
 	/*Links to hide until correct screensize*/
-	a.fuzzy, a.fe, a.M2M, a.RP{
+	a.fuzzy, a.fe, a.M2M, a.ICRP, a.TC, a.RPS, a.PRINCE2{
 		display:none;
 	}	
 
 	
 }
 
-/*---------------------------------------------------------------------END IPAD/TABLET-VERSION!----------------------------------------------------------------------------------*/
-
 
 
 /*---------------------------------------------------------------------GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
 
+/*Whilst the width is above 940px do the following*/
 @media screen and (min-width: 940px) {
 
 
-	/*------Header positioning for each project on IPAD-----*/
+	/*------Header positioning for each project on Desktop-----*/
 
 	/*Fuzzy Light System*/
 	header.LightingSystem{
@@ -413,9 +514,27 @@ ul.navigation li.icon {
 	}
 
 	/*InternetControlReport*/
-	header.RPReport{
+	header.ICRPReport{
 		top:800px;
 		left:1150px;
+	}
+
+	/*TestCasesReport*/
+	header.TCReport{
+		top:1500px;
+		left:330px;
+	}
+
+	/*RPSReport*/
+	header.RPSReport{
+		top:1500px;
+		left:1200px;
+	}
+
+	/*PRINCE2Report*/
+	header.PRINCEReport{
+		top:2200px;
+		left:250px;
 	}
 
 
@@ -432,12 +551,11 @@ ul.navigation li.icon {
 	}
 
 	/*Links to hide until correct screensize*/
-	a.fuzzy, a.fe, a.M2M, a.RP{
+	a.fuzzy, a.fe, a.M2M, a.ICRP, a.TC, a.RPS, a.PRINCE2{
 		display:none;
 	}	
 
 }
 
-/*---------------------------------------------------------------------END GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
 
 

@@ -33,7 +33,7 @@
 
     <a href="projects/FuzzyReport/LightSystem.pdf" class = "fuzzy">View</a>
 
-    <div class="fuzzy-flipbook">
+    <div class="project-flipbook">
       <div class="flipbook">
         <div style="background-image:url(projects/FuzzyReport/1.jpg)"></div>
         <div style="background-image:url(projects/FuzzyReport/2.jpg)"></div>
@@ -65,7 +65,7 @@
 
     <a href="projects/FrontEnd/FrontEnd.pdf" class = "fe">View</a>
 
-    <div class="FE-flipbook">
+    <div class="project-flipbook">
       <div class="flipbook1">
         <div style="background-image:url(projects/FrontEnd/1.jpg)"></div>
         <div style="background-image:url(projects/FrontEnd/2.jpg)"></div>
@@ -98,7 +98,7 @@
 
     <a href="projects/M2M/m2m.pdf" class = "M2M">View</a>
 
-    <div class="M2M-flipbook">
+    <div class="project-flipbook">
       <div class="flipbook2">
         <div style="background-image:url(projects/M2M/1.jpg)"></div>
         <div style="background-image:url(projects/M2M/2.jpg)"></div>
@@ -129,13 +129,13 @@
     </div>
 
 
-    <header class="RPReport">
+    <header class="ICRPReport">
       <h2>Internet Control Research Paper</h2>
     </header>
 
-    <a href="projects/ResearchPaper/RP.pdf" class = "RP">View</a>
+    <a href="projects/ResearchPaper/ICRP.pdf" class = "ICRP">View</a>
 
-    <div class="RP-flipbook">
+    <div class="project-flipbook">
       <div class="flipbook3">
         <div style="background-image:url(projects/ResearchPaper/1.jpg)"></div>
         <div style="background-image:url(projects/ResearchPaper/2.jpg)"></div>
@@ -163,10 +163,73 @@
 
 
 
-    <script type="text/javascript">
+    <header class="TCReport">
+      <h2>Test Cases Report</h2>
+    </header>
+
+    <a href="projects/TestCases/TC.pdf" class = "TC">View</a>
+
+    <div class="project-flipbook">
+      <div class="flipbook4">
+       <div style="background-image:url(projects/TestCases/1.jpg)"></div>
+       <div style="background-image:url(projects/TestCases/2.jpg)"></div>
+       <div style="background-image:url(projects/TestCases/3.jpg)"></div>
+       <div style="background-image:url(projects/TestCases/4.jpg)"></div>
+       <div style="background-image:url(projects/TestCases/5.jpg)"></div>
+       <div style="background-image:url(projects/TestCases/6.jpg)"></div>
+     </div>
+   </div>
 
 
-      function loadApp() {
+
+   <header class="RPSReport">
+    <h2>RockPaperScissors Report</h2>
+  </header>
+
+  <a href="projects/RPS/RPS.pdf" class = "RPS">View</a>
+
+  <div class="project-flipbook">
+    <div class="flipbook5">
+     <div style="background-image:url(projects/RPS/1.jpg)"></div>
+     <div style="background-image:url(projects/RPS/2.jpg)"></div>
+     <div style="background-image:url(projects/RPS/3.jpg)"></div>
+     <div style="background-image:url(projects/RPS/4.jpg)"></div>
+     <div style="background-image:url(projects/RPS/5.jpg)"></div>
+     <div style="background-image:url(projects/RPS/6.jpg)"></div>
+     <div style="background-image:url(projects/RPS/7.jpg)"></div>
+   </div>
+ </div>
+
+
+ <header class="PRINCEReport">
+  <h2>PRINCE2 Methodology Report</h2>
+</header>
+
+<a href="projects/PRINCE2/PRINCE2.pdf" class = "PRINCE2">View</a>
+
+<div class="project-flipbook">
+  <div class="flipbook6">
+   <div style="background-image:url(projects/PRINCE2/1.jpg)"></div>
+   <div style="background-image:url(projects/PRINCE2/2.jpg)"></div>
+   <div style="background-image:url(projects/PRINCE2/3.jpg)"></div>
+   <div style="background-image:url(projects/PRINCE2/4.jpg)"></div>
+   <div style="background-image:url(projects/PRINCE2/5.jpg)"></div>
+   <div style="background-image:url(projects/PRINCE2/6.jpg)"></div>
+   <div style="background-image:url(projects/PRINCE2/7.jpg)"></div>
+   <div style="background-image:url(projects/PRINCE2/8.jpg)"></div>
+   <div style="background-image:url(projects/PRINCE2/9.jpg)"></div>
+   <div style="background-image:url(projects/PRINCE2/10.jpg)"></div>
+   <div style="background-image:url(projects/PRINCE2/11.jpg)"></div>
+ </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+
+  function loadApp() {
 
   // Create the flipbook
 
@@ -180,6 +243,7 @@
       
       // Auto center this flipbook
       autoCenter: true
+
 
     });
 
@@ -215,6 +279,35 @@
 
   });
 
+  $('.flipbook4').turn({
+
+    width:700,
+
+    height:500,
+
+    autoCenter: true
+
+  });
+
+  $('.flipbook5').turn({
+
+    width:700,
+
+    height:500,
+
+    autoCenter: true
+
+  });
+
+  $('.flipbook6').turn({
+
+    width:700,
+
+    height:500,
+
+    autoCenter: true
+
+  });
 
 }
 
