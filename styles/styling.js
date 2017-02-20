@@ -1,103 +1,119 @@
 /*----Method to create a responsive menu icon for mobile version website----*/
 function myFunction() {
-    var x = document.getElementById("myNav");
-    if (x.className === "navigation") {
-        x.className += " responsive";
-    } else {
-        x.className = "navigation";
-    }
+	var x = document.getElementById("myNav");
+	if (x.className === "navigation") {
+		x.className += " responsive";
+	} else {
+		x.className = "navigation";
+	}
 }
 
 
-/*-----------Methods to create the book effect on the projects page---------*/
-function addPage(page, book) {
+/*--------Function to create the flipbook------*/
+function loadFlipBook() {
 
-	var id, pages = book.turn('pages');
 
-	// Create a new element for this page
-	var element = $('<div />', {});
+	if ($(window).width() > 600) {
 
-	// Add the page to the flipbook
-	if (book.turn('addPage', element, page)) {
+		$('.flipbook').turn({
 
-		// Add the initial HTML
-		// It will contain a loader indicator and a gradient
-		element.html('<div class="gradient"></div><div class="loader"></div>');
+      		//Width
+      		width:700,
+      
+      		//Height
+      		height:500,
+      
+     		 // Auto center this flipbook
+     		autoCenter: true
 
-		// Load the page
-		loadPage(page, element);
+  		});
+
+
+		$('.flipbook1').turn({
+
+			width:700,
+
+			height:500,
+
+			autoCenter: true
+
+		});
+
+
+		$('.flipbook2').turn({
+
+			width:700,
+
+			height:500,
+
+			autoCenter: true
+
+		});
+
+		$('.flipbook3').turn({
+
+			width:700,
+
+			height:500,
+
+			autoCenter: true
+
+		});
+
+		$('.flipbook4').turn({
+
+			width:700,
+
+			height:500,
+
+			autoCenter: true
+
+		});
+
+		$('.flipbook5').turn({
+
+			width:700,
+
+			height:500,
+
+			autoCenter: true
+
+		});
+
+		$('.flipbook6').turn({
+
+			width:700,
+
+			height:500,
+
+			autoCenter: true
+
+		});
+
+
 	}
 
 }
 
-function loadPage(page, pageElement) {
 
-	// Create an image element
+function disableEffect(){
 
-	var img = $('<img />');
+	if ($(window).width() < 600) {
 
-	img.mousedown(function(e) {
-		e.preventDefault();
-	});
+	$('.flipbook').turn({
 
-	img.load(function() {
-		
-		// Set the size
-		$(this).css({width: '100%', height: '100%'});
+      		//Width
+      		width:700,
+      
+      		//Height
+      		height:500,
+      
+     		 // Auto center this flipbook
+     		autoCenter: true
 
-		// Add the image to the page after loaded
+  		});
 
-		$(this).appendTo(pageElement);
 
-		// Remove the loader indicator
-		
-		pageElement.find('.loader').remove();
-	});
-
-	// Load the page
-
-	img.attr('src', 'pages/' +  page + '.jpg');
+	}
 
 }
-
-
-function loadLargePage(page, pageElement) {
-	
-	var img = $('<img />');
-
-	img.load(function() {
-
-		var prevImg = pageElement.find('img');
-		$(this).css({width: '100%', height: '100%'});
-		$(this).appendTo(pageElement);
-		prevImg.remove();
-		
-	});
-
-	// Loadnew page
-	
-	img.attr('src', 'pages/' +  page + '-large.jpg');
-}
-
-
-function loadSmallPage(page, pageElement) {
-	
-	var img = pageElement.find('img');
-
-	img.css({width: '100%', height: '100%'});
-
-	img.unbind('load');
-	// Loadnew page
-
-	img.attr('src', 'pages/' +  page + '.jpg');
-}
-
-
-
-// http://code.google.com/p/chromium/issues/detail?id=128488
-function isChrome() {
-
-	return navigator.userAgent.indexOf('Chrome')!=-1;
-
-}
-

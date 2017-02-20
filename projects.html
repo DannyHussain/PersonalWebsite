@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
   <ul class="navigation" id="myNav">
 
     <li><a href= "index.html" class = "HomeLink">Home</a></li>
@@ -26,6 +27,9 @@
       </li>
 
     </ul>
+
+
+
 
     <header class="LightingSystem">
       <h2>Automated Fuzzy Inference Lighting System Report</h2>
@@ -59,6 +63,8 @@
     </div>
 
 
+
+
     <header class="FEReport">
       <h2>Front-End Web Development Report</h2>
     </header>
@@ -90,6 +96,9 @@
         <div style="background-image:url(projects/FrontEnd/21.jpg)"></div>
       </div>
     </div>
+
+
+
 
 
     <header class="M2MReport">
@@ -129,6 +138,8 @@
     </div>
 
 
+
+
     <header class="ICRPReport">
       <h2>Internet Control Research Paper</h2>
     </header>
@@ -163,6 +174,8 @@
 
 
 
+
+
     <header class="TCReport">
       <h2>Test Cases Report</h2>
     </header>
@@ -182,9 +195,11 @@
 
 
 
+
+
    <header class="RPSReport">
     <h2>RockPaperScissors Report</h2>
-  </header>
+   </header>
 
   <a href="projects/RPS/RPS.pdf" class = "RPS">View</a>
 
@@ -201,9 +216,11 @@
  </div>
 
 
- <header class="PRINCEReport">
+
+
+  <header class="PRINCEReport">
   <h2>PRINCE2 Methodology Report</h2>
-</header>
+  </header>
 
 <a href="projects/PRINCE2/PRINCE2.pdf" class = "PRINCE2">View</a>
 
@@ -226,100 +243,21 @@
 
 
 
+
+
+<script>
+loadFlipBook();
+</script>
+
 <script type="text/javascript">
 
-
-  function loadApp() {
-
-  // Create the flipbook
-
-  $('.flipbook').turn({
-
-      //Width
-      width:700,
-      
-      //Height
-      height:500,
-      
-      // Auto center this flipbook
-      autoCenter: true
-
-
-    });
-
-
-  $('.flipbook1').turn({
-
-    width:700,
-
-    height:500,
-
-    autoCenter: true
-
-  });
-
-
-  $('.flipbook2').turn({
-
-    width:700,
-
-    height:500,
-
-    autoCenter: true
-
-  });
-
-  $('.flipbook3').turn({
-
-    width:700,
-
-    height:500,
-
-    autoCenter: true
-
-  });
-
-  $('.flipbook4').turn({
-
-    width:700,
-
-    height:500,
-
-    autoCenter: true
-
-  });
-
-  $('.flipbook5').turn({
-
-    width:700,
-
-    height:500,
-
-    autoCenter: true
-
-  });
-
-  $('.flipbook6').turn({
-
-    width:700,
-
-    height:500,
-
-    autoCenter: true
-
-  });
-
-}
-
-
 // Load the HTML4 version if there's not CSS transform
-
 yepnope({
   test : Modernizr.csstransforms,
   yep: ['extras/lib/turn.js'],
   nope: ['extras/lib/turn.html4.min.js'],
   both: ['css/projects.css'],
-  complete: loadApp
+  complete: loadFlipBook
 });
 
 </script>
