@@ -94,26 +94,3 @@ function loadFlipBook() {
 	}
 
 }
-
-
-function disableEffect(){
-
-	if ($(window).width() < 600) {
-
-	$('.flipbook').turn({
-
-      		//Width
-      		width:700,
-      
-      		//Height
-      		height:500,
-      
-     		 // Auto center this flipbook
-     		autoCenter: true
-
-  		});
-
-
-	}
-
-}

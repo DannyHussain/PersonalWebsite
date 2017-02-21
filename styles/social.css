@@ -1,0 +1,228 @@
+body {
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #FAF0E6;
+  margin: 0;
+  padding:0;
+  height: 100%;
+  overflow: visible;
+}
+
+header {
+  font-size: 15px;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+  white-space: nowrap;
+}
+
+footer{
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  background: #333;
+  border-top:1px solid;
+  overflow:hidden;
+  bottom:0px;
+}
+
+
+/* Remove default link settings*/
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 0px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFFFFF;
+  position: relative;
+}
+
+/*Create the navigation bar*/
+ul.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border-bottom:1px solid;
+}
+
+/*Arrange the items in the navigation bar (Move to the right and display inline)*/
+ul.navigation li {
+  padding-left:300px;
+  display:inline-block;
+}
+
+/*Spacing and organising the list*/
+ul.navigation li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+
+}
+
+
+/*Menu icon is hidden when the page is over the limit specified*/
+ul.navigation li.icon {
+  display: none;
+}
+
+#slider
+{
+  height: 700px;
+  background-size: cover;
+  -webkit-transition: background 1s ;
+}
+
+#slider:after
+{
+  position: absolute;
+  content: '';
+  top: 90px;
+  left: 0;
+  width: 100%;
+  height: 702px;
+  z-index:1;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+}
+
+.icon
+{
+  font-size: 50px;
+  color: #fff;
+  position: relative;
+  z-index: 3;
+}
+
+#left
+{
+  float: left;
+  margin: 320px 30px;
+}
+
+#right
+{
+  float: right;
+  margin: 17px 30px;
+}
+
+h2
+{
+  color: #fff;
+  text-align: center;
+  z-index: 3;
+  position: relative;
+  font-size: 52px;
+  padding-top:230px;
+
+}
+
+
+/*---------------------------------------------------------------------MOBILE-VERSION!----------------------------------------------------------------------------------*/
+
+/*Whilst the width is below 600px do the following*/
+@media screen and (max-width:600px) {
+
+  body{
+
+    overflow:hidden;
+  }
+
+  ul.navigation {
+    min-width:300px;
+    max-width: 600px;
+  }
+
+  /*Hide the links into the menu*/
+  ul.navigation li
+  {
+    display: none;
+    padding-left: 0px;
+  }
+
+  /*Display the menu expanding icon to the right*/
+  ul.navigation li.icon {
+    float: right;
+    display: inline-block;
+  }
+
+  /*--Responsive settings--*/
+
+  /*How the list should be displayed one the expand button is clicked*/
+
+  ul.navigation.responsive{
+    position: relative;
+    padding-top:60px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+  }
+
+  ul.navigation.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  ul.navigation.responsive li {
+    float: none;
+    display: inline;
+  }
+
+  ul.navigation.responsive li a {
+    display: block;
+    color:#000000;
+    text-align: center;
+  }
+
+}
+
+
+
+
+/*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
+
+/*Whilst the width is between 600px and 940px do the following*/
+@media screen and (min-width: 600px) and (max-width: 940px){
+
+  ul.navigation {
+    max-width: 1000px;
+    min-width: 1000px;
+  }
+
+  ul.navigation li {
+    padding-left:80px;
+  }
+
+}
+
+
+
+
+/*---------------------------------------------------------------------GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
+
+/*Whilst the width is above 940px do the following*/
+@media screen and (min-width: 940px) {
+
+  body{
+    background-color: #4f4a4a;
+    overflow-x:hidden;
+  }
+
+  ul.navigation li a:hover{
+    background-color: #555;
+  }
+
+  ul.navigation {
+    max-width: 2000px;
+    min-width: 2000px;
+  }
+
+
+}
+
+
