@@ -1,5 +1,4 @@
 body {
-  font-size: 14px;
   color: #FFFFFF;
   background-color: #FAF0E6;
   margin: 0;
@@ -9,15 +8,16 @@ body {
 }
 
 header {
-  font-size: 15px;
+  font-size: 25px;
   position: absolute;
-  left: 10px;
-  top:-10px;
+  left: 620px;
+  top:950px;
   white-space: nowrap;
 }
 
 footer{
-  position: absolute;
+  position: relative;
+  top:900px;
   width: 100%;
   height: 45px;
   background: #333;
@@ -33,7 +33,6 @@ a {
   color: #FFFFFF;
   padding: 0px;
   font-weight: bold;
-  font-size: 20px;
   color: #FFFFFF;
   position: relative;
 }
@@ -62,20 +61,23 @@ ul.navigation li a {
   padding: 14px 16px;
   text-decoration: none;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 21px;
 
 }
-
 
 /*Menu icon is hidden when the page is over the limit specified*/
 ul.navigation li.icon {
   display: none;
 }
 
+
+/*Set up the slide show, image covers the whole specified display*/
 #slider
 {
-  height: 700px;
-  background-size: cover;
+  height: 800px;
+  background-size: 1350px 802px;
+  background-repeat: no-repeat;
+  background-position: center;
   -webkit-transition: background 1s ;
 }
 
@@ -83,14 +85,15 @@ ul.navigation li.icon {
 {
   position: absolute;
   content: '';
-  top: 90px;
-  left: 0;
-  width: 100%;
-  height: 702px;
+  top: 95px;
+  left: 276px;
+  width: 71%;
+  height: 802px;
   z-index:1;
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
 }
 
+/*Icon for the left and right arrows*/
 .icon
 {
   font-size: 50px;
@@ -102,15 +105,16 @@ ul.navigation li.icon {
 #left
 {
   float: left;
-  margin: 320px 30px;
+  margin: 350px 300px;
 }
 
 #right
 {
   float: right;
-  margin: 17px 30px;
+  margin: 350px 300px;
 }
 
+/*Photography heading positioned to the center of the slideshow upon first startup*/
 h2
 {
   color: #fff;
@@ -118,8 +122,32 @@ h2
   z-index: 3;
   position: relative;
   font-size: 52px;
-  padding-top:230px;
+  padding-top:350px;
+}
 
+
+#fblogo{
+  width:20%;
+  position: relative;
+  left:760px;
+  top:200px;
+  border:3px solid #021a40;
+}
+
+#lilogo{
+  width:20%;
+  position: relative;
+  left:370px;
+  top:450px;
+  border:3px solid #021a40;
+}
+
+#inlogo{
+  width:20%;
+  position: relative;
+  left:-20px;
+  top:700px;
+  border:3px solid #021a40;
 }
 
 
