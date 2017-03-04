@@ -1,0 +1,45 @@
+body {
+  font-size: 50px;
+  color: #FFFFFF;
+  background-color: #4f4a4a;
+  margin: 0;
+  padding:0;
+  height: 100%;
+}
+
+
+/*---------------------------------------------------------------------MOBILE-VERSION!----------------------------------------------------------------------------------*/
+
+/*Whilst the width is below 600px do the following*/
+@media screen and (max-width:600px) {
+
+ 
+
+}
+
+
+
+
+/*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
+
+/*Whilst the width is between 600px and 940px do the following*/
+@media screen and (min-width: 600px) and (max-width: 940px){
+
+
+
+}
+
+
+
+
+
+/*---------------------------------------------------------------------GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
+
+/*Whilst the width is above 940px do the following*/
+@media screen and (min-width: 940px) {
+
+
+
+}
+
+
