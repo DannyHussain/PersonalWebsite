@@ -1,10 +1,8 @@
 body {
+  font-size: 16px;
   color: #FFFFFF;
-  background-color: #4f4a4a;
+  background-color: #393939;
   margin: 0;
-  padding:0;
-  height: 100%;
-  overflow: visible;
 }
 
 header {
@@ -20,8 +18,8 @@ footer{
   top:900px;
   width: 100%;
   height: 45px;
-  background: #333;
-  border-top:1px solid;
+  background-color: #393939;
+  border-top:2px solid;
   overflow:hidden;
   bottom:0px;
 }
@@ -43,8 +41,8 @@ ul.navigation {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
-  border-bottom:1px solid;
+  background-color: #393939;
+  border-bottom:2px solid;
 }
 
 /*Arrange the items in the navigation bar (Move to the right and display inline)*/
@@ -62,7 +60,6 @@ ul.navigation li a {
   text-decoration: none;
   transition: 0.3s;
   font-size: 21px;
-
 }
 
 /*Menu icon is hidden when the page is over the limit specified*/
@@ -126,6 +123,7 @@ h2
 }
 
 
+/*Social websites logo positioning*/
 #fblogo{
   position: absolute;
   left:780px;
@@ -145,7 +143,6 @@ h2
  left:780px;
  top:600px;
  border:3px solid #021a40;
-
 }
 
 
@@ -343,8 +340,9 @@ h2
 @media screen and (min-width: 940px) {
 
 
+  /*Adding a hover effect*/
   ul.navigation li a:hover{
-    background-color: #555;
+    background-color: #FF9900;
   }
 
   ul.navigation {

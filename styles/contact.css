@@ -1,21 +1,26 @@
 body {
-  font-size: 14px;
+  font-size: 16px;
   color: #FFFFFF;
-  background-color: #4f4a4a;
+  background-color: #f9efef;
   margin: 0;
-  padding:0;
-  height: 100%;
 }
-
 
 footer{
   position: fixed;
   width: 100%;
   height: 45px;
-  background: #333;
-  border-top:1px solid;
+  background-color: #393939;
+  border-top:2px solid;
   overflow:hidden;
   bottom: 0px;
+}
+
+h1{
+  color:#160101;
+}
+
+p{
+  color:#160101;
 }
 
 /* Remove default link settings*/
@@ -39,6 +44,16 @@ ul.navigation {
   border-bottom:1px solid;
 }
 
+/*Create the navigation bar*/
+ul.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #393939;
+  border-bottom:2px solid;
+}
+
 /*Arrange the items in the navigation bar (Move to the right and display inline)*/
 ul.navigation li {
   padding-left:300px;
@@ -54,7 +69,6 @@ ul.navigation li a {
   text-decoration: none;
   transition: 0.3s;
   font-size: 21px;
-  
 }
 
 /*Menu icon is hidden when the page is over the limit specified*/
@@ -65,7 +79,7 @@ ul.navigation li.icon {
 
 #wrapper {
   width: 700px;
-  padding: 150px 50px 20px 50px;
+  padding: 50px 50px 20px 50px;
   margin: 20px auto;
 }
 
@@ -102,6 +116,7 @@ label {
   width: 90px;
   padding-top: 5px;
   font-size: 22px;
+  color:#160101;
 }
 
 .message{
@@ -114,9 +129,11 @@ label {
 .return{
   position: relative;
   top:300px;
-  left:-10px;
+  left:850px;
   text-align: center;
   text-decoration: underline;
+  background-color: grey;
+  display: inline-block;
 }
 
 
@@ -130,7 +147,12 @@ label {
   }
 
   p{
-    width:35em;
+    width:27em;
+    font-size: 12px;
+  }
+
+  h1{
+    font-size: 18px;
   }
 
   .return{
@@ -184,9 +206,8 @@ label {
 
 
   #wrapper {
-    width: 700px;
-    padding: 50px 50px 20px 50px;
-    margin: 20px auto;
+    padding: 50px 50px 20px 10px;
+    margin: 0px auto;
   }
 
   #contact {
@@ -195,23 +216,25 @@ label {
   }
 
   #contact input, #contact textarea {
-    width: 300px;
+    width: 240px;
     font-size: 1em;
-    margin: 0px 0px 40px 90px;
+    margin: 0px 0px 30px 30px;
   }
 
   #contact input.button {
     width: 100px;
     position: relative;
-    left:-200px;
+    top:130px;
+    left:-230px;
   }
 
   label {
-    left:0px;
-    margin-right: 30px;
+    position:relative;
+    left:-20px;
+    margin-right: 89px;
     width: 70px;
     padding-top: 5px;
-    font-size: 15px;
+    font-size: 12px;
   }
 
 }
@@ -233,6 +256,32 @@ label {
     padding-left:80px;
   }
 
+  #wrapper {
+    padding: 50px 0px 20px 10px;
+  }
+
+  #contact input, #contact textarea {
+    width: 300px;
+    font-size: 1em;
+    margin: 0px 0px 30px 30px;
+  }
+
+  #contact input.button {
+    width: 100px;
+    position: relative;
+    top:0px;
+    left:-230px;
+  }
+
+  label {
+    position:relative;
+    left:-20px;
+    margin-right: 89px;
+    width: 70px;
+    padding-top: 5px;
+    font-size: 16px;
+  }
+
 }
 
 
@@ -244,16 +293,15 @@ label {
 /*Whilst the width is above 940px do the following*/
 @media screen and (min-width: 940px) {
 
-  ul.navigation li a:hover{
-    background-color: #555;
-  }
+ /*Adding a hover effect*/
+ ul.navigation li a:hover{
+  background-color: #FF9900;
+}
 
-  ul.navigation {
-    max-width: 2000px;
-    min-width: 2000px;
-  }
-
-
+ul.navigation {
+  max-width: 2000px;
+  min-width: 2000px;
+}
 
 }
 
