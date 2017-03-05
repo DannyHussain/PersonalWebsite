@@ -142,9 +142,6 @@ label {
 /*Whilst the width is below 600px do the following*/
 @media screen and (max-width:600px) {
 
-  body{
-    overflow:hidden;
-  }
 
   p{
     width:27em;
@@ -160,16 +157,7 @@ label {
   }
 
 
-  .return{
-    left:50px;
-  }
-
-  ul.navigation {
-    min-width:300px;
-    max-width: 600px;
-  }
-
-  /*Hide the links into the menu*/
+ /*Hide the links into the menu*/
   ul.navigation li
   {
     display: none;
@@ -187,9 +175,7 @@ label {
   /*How the list should be displayed one the expand button is clicked*/
 
   ul.navigation.responsive{
-    position: relative;
     padding-top:0px;
-    width: 100%;
     background-color: rgba(255,255,255,0.1);
   }
 
@@ -212,36 +198,40 @@ label {
 
 
   #wrapper {
-    padding: 50px 50px 20px 10px;
-    margin: 0px auto;
+    width: 350px;
+    padding: 50px 0px 0px 0px;
+    overflow:hidden;
   }
 
-  #contact {
-    width: 600px;
-    margin-top: 25px;
-  }
 
   #contact input, #contact textarea {
     width: 240px;
     font-size: 1em;
-    margin: 0px 0px 30px 30px;
+    margin: 0px 250px 30px 30px;
   }
 
   #contact input.button {
     width: 100px;
     position: relative;
-    top:130px;
-    left:-230px;
+    top:10px;
+    left:-100px;
   }
 
   label {
-    position:relative;
-    left:-20px;
-    margin-right: 89px;
-    width: 70px;
-    padding-top: 5px;
+    width:35px;
     font-size: 12px;
   }
+
+
+  .message{
+    top:200px;
+  }
+
+  .return{
+    top:200px;
+    left:20px;
+  }
+
 
 }
 

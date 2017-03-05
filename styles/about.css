@@ -225,6 +225,7 @@ span{
   }
 
   p.animation{
+    top:150px;
     font-size: 20px;
     margin: 10px  0 0 10px;
   }

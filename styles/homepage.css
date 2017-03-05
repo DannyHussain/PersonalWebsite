@@ -1,8 +1,9 @@
 body {
 	font-size: 16px;
 	color: #FFFFFF;
-	background-color: #393939;
+	background-image: url("../images/background.jpg");
 	margin: 0;
+	overflow:hidden;
 }
 
 header {
@@ -31,8 +32,6 @@ footer{
 	position: absolute;
 	left: 750px;
 	top: 500px;
-	max-width: 500px;
-	min-width: 500px;
 }
 
 a.CV{
@@ -102,26 +101,16 @@ ul.navigation li.icon {
 /*Whilst the width is below 600px do the following*/
 @media screen and (max-width:600px) {
 
-	body{
-		overflow:hidden;
-	}
 
 	header {
-		font-size: 18px;
-		left: 100px;
-		top:250px;
+		font-size: 16px;
+		left: 70px;
+		top:220px;
 	}
-
 	footer{
 		display:none;
 	}
 
-
-	ul.navigation {
-		margin:0px;
-		min-width:300px;
-		max-width: 600px;
-	}
 
 	/*Hide the links into the menu*/
 	ul.navigation li
@@ -141,9 +130,7 @@ ul.navigation li.icon {
 	/*How the list should be displayed one the expand button is clicked*/
 
 	ul.navigation.responsive{
-		position: relative;
 		padding-top:0px;
-		width: 100%;
 		background-color: rgba(255,255,255,0.1);
 	}
 
@@ -164,9 +151,9 @@ ul.navigation li.icon {
 	}
 
 	.buttons{
-		font-size: 24px;
-		left: 100px;
-		top: 360px;
+		font-size: 20px;
+		left: 60px;
+		top: 340px;
 	}
 
 }

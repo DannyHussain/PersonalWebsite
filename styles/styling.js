@@ -12,9 +12,6 @@ function myFunction() {
 /*--------Function to create the flipbook------*/
 function loadFlipBook() {
 
-
-	if ($(window).width() > 600) {
-
 		$('.flipbook').turn({
 
       		//Width
@@ -90,7 +87,5 @@ function loadFlipBook() {
 
 		});
 
-
-	}
 
 }
