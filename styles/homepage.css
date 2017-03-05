@@ -108,9 +108,14 @@ ul.navigation li.icon {
 
 	header {
 		font-size: 18px;
-		left: 20px;
+		left: 100px;
 		top:250px;
 	}
+
+	footer{
+		display:none;
+	}
+
 
 	ul.navigation {
 		margin:0px;
@@ -160,7 +165,7 @@ ul.navigation li.icon {
 
 	.buttons{
 		font-size: 24px;
-		left: 30px;
+		left: 100px;
 		top: 360px;
 	}
 

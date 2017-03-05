@@ -143,6 +143,11 @@ span{
     overflow:hidden;
   }
 
+  footer{
+    display:none;
+  }
+
+
   ul.navigation {
     min-width:300px;
     max-width: 600px;
@@ -167,7 +172,7 @@ span{
 
   ul.navigation.responsive{
     position: relative;
-    padding-top:60px;
+    padding-top:0px;
     width: 100%;
     background-color: rgba(255,255,255,0.1);
   }
@@ -186,6 +191,7 @@ span{
   ul.navigation.responsive li a {
     display: block;
     text-align: center;
+    color:#494646;
   }
 
   p.animation{

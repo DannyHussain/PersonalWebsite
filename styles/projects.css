@@ -159,7 +159,6 @@ ul.navigation li.icon {
 		font-size:11px;
 	}
 
-
 	footer{
 		display:none;
 	}
@@ -188,7 +187,7 @@ ul.navigation li.icon {
 
 	ul.navigation.responsive{
 		position: relative;
-		padding-top:60px;
+		padding-top:0px;
 		width: 100%;
 		background-color: rgba(255,255,255,0.1);
 	}
@@ -360,10 +359,6 @@ ul.navigation li.icon {
 
 /*Whilst the width is between 600px and 940px do the following*/
 @media screen and (min-width: 600px) and (max-width: 940px) {
-
-	body{
-		overflow-x: hidden;
-	}
 
 	header{
 		font-size: 15px;
