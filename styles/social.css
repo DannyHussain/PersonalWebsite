@@ -261,8 +261,8 @@ h2
 
 /*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
 
-/*Whilst the width is between 600px and 940px do the following*/
-@media screen and (min-width: 600px) and (max-width: 940px){
+/*Whilst the width is between 600px and 800px do the following*/
+@media screen and (min-width: 600px) and (max-width: 800px){
 
   ul.navigation {
     max-width: 1000px;
@@ -332,13 +332,86 @@ h2
 
 }
 
+/*---------------------------------------------------------------------LAPTOP VERSION!!!--------------------------------------------------------------------------------------*/
+
+/*Whilst the width is between 800px and 1600px do the following*/
+@media screen and (min-width: 800px) and (max-width: 1600px){
+
+  ul.navigation {
+    max-width: 1500px;
+    min-width: 1500px;
+  }
+
+  ul.navigation li {
+    padding-left:200px;
+  }
+
+  ul.navigation li a:hover{
+    background-color: #FF9900;
+  }
+
+  #slider
+  {
+    height: 500px;
+    background-size: 870px 800px;
+  }
+
+  #slider:after
+  {
+    top: 84px;
+    left: 240px;
+    width: 65%;
+    height: 503px;
+  }
+
+  #left
+  {
+    margin: 210px 250px;
+  }
+
+  #right
+  {
+    margin: 210px 250px;
+  }
+
+  h2
+  {
+    font-size: 36px;
+    padding-top:210px;
+  }
+
+  header{
+    font-size: 18px;
+    left:400px;
+    top:680px;
+  }
+
+  #fblogo{
+    left:450px;
+    top:200px;
+  }
+
+  #lilogo{
+    left:150px;
+    top:400px;
+  }
+
+  #inlogo{
+    left:-160px;
+    top:600px;
+  }
+
+
+
+}
+
 
 
 
 /*---------------------------------------------------------------------GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
 
-/*Whilst the width is above 940px do the following*/
-@media screen and (min-width: 940px) {
+/*Whilst the width is above 1600px do the following*/
+@media screen and (min-width: 1600px) {
 
 
   /*Adding a hover effect*/

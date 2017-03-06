@@ -23,6 +23,10 @@ p{
   color:#160101;
 }
 
+p.footer{
+  color:#FFFFFF;
+}
+
 /* Remove default link settings*/
 a {
   text-decoration: none;
@@ -240,8 +244,8 @@ label {
 
 /*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
 
-/*Whilst the width is between 600px and 940px do the following*/
-@media screen and (min-width: 600px) and (max-width: 940px){
+/*Whilst the width is between 600px and 800px do the following*/
+@media screen and (min-width: 600px) and (max-width: 800px){
 
   ul.navigation {
     max-width: 1000px;
@@ -281,13 +285,64 @@ label {
 }
 
 
+/*---------------------------------------------------------------------LAPTOP VERSION!!!--------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 800px) and (max-width: 1600px){
+
+  ul.navigation {
+    max-width: 1500px;
+    min-width: 1500px;
+  }
+
+  ul.navigation li {
+    padding-left:200px;
+  }
+
+  ul.navigation li a:hover{
+    background-color: #FF9900;
+  }
+
+  #wrapper {
+    padding: 0px 0px 20px 10px;
+  }
+
+  #contact input, #contact textarea {
+    width: 300px;
+    font-size: 1em;
+    margin: 0px 0px 30px 30px;
+  }
+
+  #contact input.button {
+    width: 100px;
+    position: relative;
+    top:0px;
+    left:-230px;
+    margin-bottom: 100px;
+  }
+
+  label {
+    position:relative;
+    left:-20px;
+    margin-right: 89px;
+    width: 70px;
+    padding-top: 5px;
+    font-size: 16px;
+  }
+
+  .return{
+    top:300px;
+    left:600px;
+  }
+
+
+}
 
 
 
 /*---------------------------------------------------------------------GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
 
-/*Whilst the width is above 940px do the following*/
-@media screen and (min-width: 940px) {
+/*Whilst the width is above 1600px do the following*/
+@media screen and (min-width: 1600px) {
 
  /*Adding a hover effect*/
  ul.navigation li a:hover{

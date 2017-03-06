@@ -207,13 +207,12 @@ span{
 
 /*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
 
-/*Whilst the width is between 600px and 940px do the following*/
-@media screen and (min-width: 600px) and (max-width: 940px){
+/*Whilst the width is between 600px and 800px do the following*/
+@media screen and (min-width: 600px) and (max-width: 800px){
 
   body{
     overflow:hidden;
   }
-
 
   ul.navigation {
     min-width: 940px;
@@ -232,13 +231,38 @@ span{
 
 }
 
+/*---------------------------------------------------------------------LAPTOP VERSION!!!--------------------------------------------------------------------------------------*/
 
+/*Whilst the width is between 800px and 1600px do the following*/
+@media screen and (min-width: 800px) and (max-width: 1600px){
+
+
+  ul.navigation {
+    max-width: 1500px;
+    min-width: 1500px;
+  }
+
+  ul.navigation li {
+    padding-left:200px;
+  }
+
+  ul.navigation li a:hover{
+    background-color: #FF9900;
+  }
+
+  p.animation{
+    top:150px;
+    font-size: 18px;
+    margin: 10px  0 0 10px;
+  }
+
+}
 
 
 /*---------------------------------------------------------------------GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
 
-/*Whilst the width is above 940px do the following*/
-@media screen and (min-width: 940px) {
+/*Whilst the width is above 1600px do the following*/
+@media screen and (min-width: 1600px) {
 
   /*Adding a hover effect*/
   ul.navigation li a:hover{

@@ -357,8 +357,8 @@ ul.navigation li.icon {
 
 /*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
 
-/*Whilst the width is between 600px and 940px do the following*/
-@media screen and (min-width: 600px) and (max-width: 940px) {
+/*Whilst the width is between 600px and 800px do the following*/
+@media screen and (min-width: 600px) and (max-width: 800px) {
 
 	header{
 		font-size: 15px;
@@ -478,10 +478,141 @@ ul.navigation li.icon {
 
 
 
+/*---------------------------------------------------------------------LAPTOP VERSION!!!--------------------------------------------------------------------------------------*/
+
+/*Whilst the width is between 800px and 1600px do the following*/
+@media screen and (min-width: 800px) and (max-width: 1600px){
+
+
+	ul.navigation {
+		max-width: 1500px;
+		min-width: 1500px;
+	}
+
+	ul.navigation li {
+		padding-left:200px;
+	}
+
+	ul.navigation li a:hover{
+		background-color: #FF9900;
+	}
+
+
+	/*------Header positioning for each project on Desktop-----*/
+
+	/*Fuzzy Light System*/
+	header.LightingSystem{
+		font-size: 14px;
+		top:100px;
+		left:150px;
+	}
+
+	/*Front End Report*/
+	header.FEReport{
+		font-size: 14px;
+		top:100px;
+		left:950px;
+	}
+
+	/*M2M Report*/
+	header.M2MReport{
+		font-size: 14px;
+		top:800px;
+		left:320px;
+	}
+
+	/*InternetControlReport*/
+	header.ICRPReport{
+		font-size: 14px;
+		top:800px;
+		left:970px;
+	}
+
+	/*TestCasesReport*/
+	header.TCReport{
+		font-size: 14px;
+		top:1500px;
+		left:310px;
+	}
+
+	/*RPSReport*/
+	header.RPSReport{
+		font-size: 14px;
+		top:1500px;
+		left:1000px;
+	}
+
+	/*PRINCE2Report*/
+	header.PRINCEReport{
+		font-size: 14px;
+		top:2200px;
+		left:250px;
+	}
+
+	/*---------LightingSystem Report-----------*/
+
+	.project-flipbook .flipbook{
+		top:150px;
+		left:50px;
+	}
+
+
+	/*---------Front End Report-----------*/
+
+	.project-flipbook .flipbook1{
+		top:-350px;
+		left:780px;
+	}
+
+	/*---------M2M Report-----------*/
+
+	.project-flipbook .flipbook2{
+		top:-150px;
+		left:50px;
+	}
+
+
+	/*---------Internet Control Research Paper-----------*/
+
+	.project-flipbook .flipbook3{
+		top:-650px;
+		left:780px;
+	}
+
+	/*-----------Test Cases Report------------*/
+
+	.project-flipbook .flipbook4{
+		top:-450px;
+		left:50px;
+	}
+
+	/*-----------RockPaperScissors Report------------*/
+
+	.project-flipbook .flipbook5{
+		top:-950px;
+		left:780px;
+	}
+
+	/*-----------PRINCE2 Report------------*/
+
+	.project-flipbook .flipbook6{
+		top:-750px;
+		left:50px;
+	}
+
+	/*Links to hide until correct screensize*/
+	a.fuzzy, a.fe, a.M2M, a.ICRP, a.TC, a.RPS, a.PRINCE2{
+		display:none;
+	}	
+
+
+}
+
+
 /*---------------------------------------------------------------------GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
 
-/*Whilst the width is above 940px do the following*/
-@media screen and (min-width: 940px) {
+/*Whilst the width is above 1600px do the following*/
+@media screen and (min-width: 1600px) {
 
 
 	/*------Header positioning for each project on Desktop-----*/

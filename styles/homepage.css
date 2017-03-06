@@ -29,7 +29,7 @@ body {
 	to{width: 12em;}
 }
 @keyframes blinkTextCursor{
-	from{border-right-color: rgba(255,255,255,.75);}
+	from{border-right-color: rgba(0,0,0,0);}
 	to{border-right-color: transparent;}
 }
 
@@ -187,17 +187,17 @@ ul.navigation li.icon {
 
 /*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
 
-/*Whilst the width is between 600px and 940px do the following*/
-@media screen and (min-width: 600px) and (max-width: 940px){
+/*Whilst the width is between 600px and 800px do the following*/
+@media screen and (min-width: 600px) and (max-width: 800px){
 
 	.title{
 		top: 300px;
-		left:10px;
+		left:40px;
 		font-size:70px;
 	}
 
 	.buttons{
-		left: 250px;
+		left: 280px;
 		top: 450px;
 	}
 
@@ -214,10 +214,59 @@ ul.navigation li.icon {
 
 
 
+
+/*---------------------------------------------------------------------LAPTOP VERSION!!!--------------------------------------------------------------------------------------*/
+
+/*Whilst the width is between 800px and 1600px do the following*/
+@media screen and (min-width: 800px) and (max-width: 1600px){
+
+	body{
+		overflow-x: hidden;
+	}
+
+	.title{
+		top: 300px;
+		left:350px;
+		font-size:70px;
+	}
+
+	.buttons{
+		left: 610px;
+		top: 420px;
+	}
+
+	ul.navigation {
+		max-width: 1500px;
+		min-width: 1500px;
+	}
+
+	ul.navigation li {
+		padding-left:200px;
+	}
+
+	a.CV:hover{
+		background-color: #FF9900;
+		color:black;
+	}
+
+
+	a.Social:hover{
+		background-color: #FF9900;
+		color:black;
+	}
+
+	ul.navigation li a:hover{
+		background-color: #FF9900;
+	}
+
+}
+
+
+
 /*---------------------------------------------------------------------GLOBAL/DESKTOP VERSION!--------------------------------------------------------------------------------*/
 
-/*Whilst the width is above 940px do the following*/
-@media screen and (min-width: 940px) {
+/*Whilst the width is above 1600px do the following*/
+@media screen and (min-width: 1600px) {
 
 	/*Add hover effects to the buttons and navigation*/
 	a.CV:hover{
