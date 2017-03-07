@@ -3,156 +3,110 @@ body {
 	color: #FFFFFF;
 	background-image: url("../images/background.jpg");
 	margin: 0;
+	overflow-x:hidden;
+}
+
+/*Footer positioned to the bottom of the webpage*/
+footer{
+	position: absolute;
+	top:950px;
+	width: 100%;
+	height: 45px;
+	background-color: #393939;
+	border-top:2px solid;
+	overflow:hidden;
+	bottom:0px;
 }
 
 .title{
 	position: absolute;
-	top: 350px;
-	left:400px;
 	width: 20em;
 	margin: 0 auto;
+	top:250px;
+	font-size: 34px;
 	border-right: 2px solid rgba(255,255,255,.75);
-	font-size: 85px;
 	text-align: center;
 	white-space: nowrap;
 	font-weight:700;
 	overflow: hidden;
 }
 
-/* Animation */
+/*Animation for the header*/
 .typewriter{
 	animation: typewriter 4s steps(44) 1s 1 normal both,
 	blinkTextCursor 500ms steps(44) infinite normal;
 }
+
 @keyframes typewriter{
 	from{width: 0;}
 	to{width: 12em;}
 }
+
 @keyframes blinkTextCursor{
 	from{border-right-color: rgba(0,0,0,0);}
 	to{border-right-color: transparent;}
 }
 
-footer{
-	position: absolute;
-	width: 100%;
-	height: 45px;
-	background-color: #393939;
-	border-top:2px solid;
-	overflow:hidden;
-	bottom: 0px;
-}
-
-/*--Button Links--*/
-.buttons{
-	font-size: 34px;
-	position: absolute;
-	left: 750px;
-	top: 500px;
-	white-space: nowrap;
-}
-
-a.CV{
-	color: #FFFFFF;
-	border: 2px solid white;
-	padding:20px;
-	box-sizing: border-box; 
-}
-
-
-a.Social{
-	color: #FFFFFF;
-	border: 2px solid white;
-	padding:20px;
-	box-sizing: border-box;
-
-}
 
 
 /* Remove default link settings*/
 a {
 	text-decoration: none;
 	color: #FFFFFF;
-	padding: 0px;
 	font-weight: bold;
 	font-size: 20px;
 	color: #FFFFFF;
-	position: relative;
 }
+
+a.CV, a.Social{
+	color: #FFFFFF;
+	border: 2px solid white;
+	padding:20px;
+	box-sizing: border-box; 
+}
+
+/*--Button Links--*/
+.buttons{
+	position: absolute;
+	left: 50px;
+	top: 350px;
+	white-space: nowrap;
+}
+
+
+/*------------------Navigation------------------*/
 
 /*Create the navigation bar*/
 ul.navigation {
-	list-style-type: none;
 	margin: 0;
-	padding: 0;
 	overflow: hidden;
 	background-color: #393939;
 	border-bottom:2px solid;
 }
 
-/*Arrange the items in the navigation bar (Move to the right and display inline)*/
+/*Hide the list into menu icon*/
 ul.navigation li {
-	padding-left:300px;
-	display:inline-block;
+	display:none;
+	padding-left:0px;
 }
 
 /*Spacing and organising the list*/
 ul.navigation li a {
 	display: inline-block;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	transition: 0.3s;
+	padding: 14px;
 	font-size: 21px;
 }
 
-/*Menu icon is hidden when the page is over the limit specified*/
+/*Position the menu expanding icon to the right*/
 ul.navigation li.icon {
-	display: none;
+	float: right;
+	display: inline-block;
 }
 
 
+/*--Responsive settings--*/
 
-/*---------------------------------------------------------------------MOBILE-VERSION!----------------------------------------------------------------------------------*/
-
-/*Whilst the width is below 600px do the following*/
-@media screen and (max-width:600px) {
-
-	.title{
-		top: 250px;
-		left:0px;
-		font-size:40px;
-	}
-
-	@keyframes typewriter{
-	from{width: 0;}
-	to{width: 10em;}
-}
-
-
-	footer{
-		display:none;
-	}
-
-
-	/*Hide the links into the menu*/
-	ul.navigation li
-	{
-		display: none;
-		padding-left: 0px;
-	}
-
-	/*Display the menu expanding icon to the right*/
-	ul.navigation li.icon {
-		float: right;
-		display: inline-block;
-	}
-
-	/*--Responsive settings--*/
-
-	/*How the list should be displayed one the expand button is clicked*/
-
+@media screen and (max-width: 600px){
 	ul.navigation.responsive{
 		padding-top:0px;
 		background-color: rgba(255,255,255,0.1);
@@ -172,54 +126,72 @@ ul.navigation li.icon {
 	ul.navigation.responsive li a {
 		display: block;
 		text-align: center;
-	}
-
-	.buttons{
-		font-size: 20px;
-		left: 60px;
-		top: 340px;
+		color:#FFFFFF;
 	}
 
 }
 
 
 
-
-/*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
+/*--------------------------------------------------IPAD/TABLET VERSION---------------------------------------------------------------------*/
 
 /*Whilst the width is between 600px and 800px do the following*/
 @media screen and (min-width: 600px) and (max-width: 800px){
 
+	body{
+		overflow:visible;
+	}
+
+	footer{
+		top:950px;
+		max-width: 940px;
+		min-width: 940px;
+	}
+
 	.title{
 		top: 300px;
-		left:40px;
-		font-size:70px;
+		left:60px;
+		font-size:60px;
 	}
 
 	.buttons{
 		left: 280px;
-		top: 450px;
+		top: 400px;
 	}
 
 	ul.navigation {
-		max-width: 1000px;
-		min-width: 1000px;
+		max-width: 900px;
+		min-width: 900px;
+		margin: 0;
+		overflow: hidden;
 	}
 
 	ul.navigation li {
-		padding-left:80px;
+		padding-left:50px;
+		display: inline-block;
+	}
+
+	/*Menu icon is hidden when the page is over the limit specified*/
+	ul.navigation li.icon {
+		display: none;
 	}
 
 }
 
-
-
-
-/*---------------------------------------------------------------------LAPTOP VERSION!!!--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------LAPTOP VERSION---------------------------------------------------------------------*/
 
 /*Whilst the width is between 800px and 1600px do the following*/
 @media screen and (min-width: 800px) and (max-width: 1600px){
 
+	body{
+		overflow:visible;
+	}
+
+	footer{
+		max-width: 1800px;
+		min-width: 1800px;
+	}
+	
 	.title{
 		top: 300px;
 		left:350px;
@@ -232,57 +204,73 @@ ul.navigation li.icon {
 	}
 
 	ul.navigation {
-		max-width: 1600px;
-		min-width: 1600px;
+		max-width: 1760px;
+		min-width: 1760px;
 	}
 
 	ul.navigation li {
 		padding-left:200px;
+		display: inline-block;
 	}
 
-	a.CV:hover{
+	/*Menu icon is hidden when the page is over the limit specified*/
+	ul.navigation li.icon {
+		display: none;
+	}
+
+	a.CV:hover, a.Social:hover, ul.navigation li a:hover{
 		background-color: #FF9900;
 		color:black;
 	}
 
+	
 
-	a.Social:hover{
-		background-color: #FF9900;
-		color:black;
-	}
-
-	ul.navigation li a:hover{
-		background-color: #FF9900;
-	}
 
 }
 
 
 
-/*---------------------------------------------------------------------GLOBAL/DESKTOP VERSION!--------------------------------------------------------------------------------*/
+/*--------------------------------------------------DESKTOP VERSION---------------------------------------------------------------------*/
 
 /*Whilst the width is above 1600px do the following*/
 @media screen and (min-width: 1600px) {
 
+	footer{
+		min-width:2000px
+		max-width:2000px;
+	}
+
+
+	.title{
+		top: 350px;
+		left:400px;
+		font-size: 85px;
+	}
+
+	.buttons{
+		left: 750px;
+		top: 500px;
+	}
+
 	/*Add hover effects to the buttons and navigation*/
-	a.CV:hover{
+	a.CV:hover, a.Social:hover, ul.navigation li a:hover{
 		background-color: #FF9900;
 		color:black;
 	}
 
-
-	a.Social:hover{
-		background-color: #FF9900;
-		color:black;
-	}
-
-	ul.navigation li a:hover{
-		background-color: #FF9900;
+	ul.navigation li {
+		padding-left:300px;
+		display:inline-block;
 	}
 
 	ul.navigation {
 		max-width: 2000px;
 		min-width: 2000px;
+	}
+
+	/*Menu icon is hidden when the page is over the limit specified*/
+	ul.navigation li.icon {
+		display: none;
 	}
 
 }

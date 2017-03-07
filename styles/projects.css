@@ -7,7 +7,7 @@ body {
 
 header {
 	color:#FFFFFF;
-	font-size: 18px;
+	font-size: 12px;
 	position: absolute;
 	letter-spacing:1px;
 	white-space: nowrap;
@@ -15,13 +15,14 @@ header {
 }
 
 footer{
-  position: absolute;
-  top:3600px;
-  width: 100%;
-  height: 45px;
-  background-color: #393939;
-  border-top:2px solid;
-  overflow:hidden;
+	position: absolute;
+	top:5600px;
+	width: 100%;
+	height: 45px;
+	background-color: #393939;
+	border-top:2px solid;
+	overflow:hidden;
+	bottom:0px;
 }
 
 
@@ -29,167 +30,49 @@ footer{
 a {
 	text-decoration: none;
 	color: #FFFFFF;
-	padding: 0px;
 	font-weight: bold;
 	font-size: 20px;
 	color: #FFFFFF;
 	position: relative;
 }
 
+/*------------------Navigation------------------*/
+
 /*Create the navigation bar*/
 ul.navigation {
-	list-style-type: none;
 	margin: 0;
-	padding: 0;
 	overflow: hidden;
 	background-color: #393939;
 	border-bottom:2px solid;
 }
 
-/*Arrange the items in the navigation bar (Move to the right and display inline)*/
+/*Hide the list into menu icon*/
 ul.navigation li {
-	padding-left:300px;
-	display:inline-block;
+	display:none;
+	padding-left:0px;
 }
 
 /*Spacing and organising the list*/
 ul.navigation li a {
 	display: inline-block;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	transition: 0.3s;
+	padding: 14px;
 	font-size: 21px;
 }
 
-/*Menu icon is hidden when the page is over the limit specified*/
+/*Position the menu expanding icon to the right*/
 ul.navigation li.icon {
-	display: none;
+	float: right;
+	display: inline-block;
 }
 
 
+/*--Responsive settings--*/
 
-
-/*-------------------------------------------------------------------------PROJECTS------------------------------------------------------------------------------------*/
-
-
-/*Settings for each flipbook, also a shadow effect to give it a glow*/
-
-.project-flipbook .page {
-	background-size:100% 100%;
-}
-
-
-.project-flipbook .shadow{
-	-webkit-box-shadow:0 0 20px #ccc;
-	-moz-box-shadow:0 0 20px #ccc;
-	-o-box-shadow:0 0 20px #ccc;
-	-ms-box-shadow:0 0 20px #ccc;
-	box-shadow:0 0 20px #ccc;
-}
-
-
-/*Flipbook positioning*/
-
-/*---------LightingSystem Report-----------*/
-
-.project-flipbook .flipbook{
-	top:150px;
-	left:100px;
-}
-
-
-/*---------Front End Report-----------*/
-
-.project-flipbook .flipbook1{
-	top:-350px;
-	left:1000px;
-}
-
-/*---------M2M Report-----------*/
-
-.project-flipbook .flipbook2{
-	top:-150px;
-	left:100px;
-}
-
-
-/*---------Internet Control Research Paper-----------*/
-
-.project-flipbook .flipbook3{
-	top:-650px;
-	left:1000px;
-}
-
-/*-----------Test Cases Report------------*/
-
-.project-flipbook .flipbook4{
-	top:-450px;
-	left:100px;
-}
-
-/*-----------RockPaperScissors Report------------*/
-
-.project-flipbook .flipbook5{
-	top:-950px;
-	left:1020px;
-}
-
-/*-----------PRINCE2 Report------------*/
-
-.project-flipbook .flipbook6{
-	top:-750px;
-	left:100px;
-}
-
-
-
-
-
-/*---------------------------------------------------------------------MOBILE-VERSION!----------------------------------------------------------------------------------*/
-
-/*Whilst the width is below 600px do the following*/
-@media screen and (max-width:600px) {
-
-
-	header{
-		font-size:11px;
-	}
-
-	footer{
-		display:none;
-	}
-
-	ul.navigation {
-		min-width:500px;
-		max-width: 700px;
-	}
-
-	/*Hide the links into the menu*/
-	ul.navigation li
-	{
-		display: none;
-		padding-left: 0px;
-	}
-
-	/*Display the menu expanding icon to the right*/
-	ul.navigation li.icon {
-		float: right;
-		display: inline-block;
-	}
-
-	/*--Responsive settings--*/
-
-	/*How the list should be displayed one the expand button is clicked*/
-
+@media screen and (max-width: 600px){
 	ul.navigation.responsive{
-		position: relative;
 		padding-top:0px;
-		width: 100%;
 		background-color: rgba(255,255,255,0.1);
 	}
-
 
 	ul.navigation.responsive li.icon {
 		position: absolute;
@@ -205,178 +88,200 @@ ul.navigation li.icon {
 	ul.navigation.responsive li a {
 		display: block;
 		text-align: center;
+		color:#FFFFFF;
 	}
-
-	/*------Header positioning for each projects-----*/
-
-	/*Fuzzy Light System*/
-	header.LightingSystem{
-		top:300px;
-		left:40px;
-	}
-
-
-	/*Front End Report*/
-	header.FEReport{
-		top:1000px;
-		left:100px;
-	}
-
-	/*M2M Report*/
-	header.M2MReport{
-		top:1700px;
-		left:190px;
-	}
-
-	/*InternetControlReport*/
-	header.ICRPReport{
-		top:2450px;
-		left:110px;
-	}
-
-	/*TestCases*/
-	header.TCReport{
-		top:3150px;
-		left:170px;
-	}
-
-	/*RPSReport*/
-	header.RPSReport{
-		top:3870px;
-		left:140px;
-	}
-
-	/*PRINCE2Report*/
-	header.PRINCEReport{
-		top:4600px;
-		left:120px;
-	}
-
-
-
-	/*------Project paper positioning for each-----*/
-
-	/*Fuzzy Light System*/
-	.project-flipbook .flipbook{
-		left:-100px;
-		top:300px;
-	}
-
-	/*Front End Report*/
-	.project-flipbook .flipbook1{
-		left:-100px;
-		top:450px;
-
-	}
-
-	/*M2M Report*/
-	.project-flipbook .flipbook2{
-		left:-100px;
-		top:600px;
-		padding-bottom: 20px;
-	}
-
-	/*InternetControlReport*/
-	.project-flipbook .flipbook3{
-		left:-100px;
-		top:770px;
-	}
-
-	/*Test Cases Report*/
-	.project-flipbook .flipbook4{
-		left:-100px;
-		top:920px;
-	}
-
-	/*RockPaperScissors Report*/
-	.project-flipbook .flipbook5{
-		left:-100px;
-		top:1070px;
-	}
-
-	/*PRINCE2 Report*/
-	.project-flipbook .flipbook6{
-		left:-100px;
-		top:1230px;
-		padding-bottom: 30px;
-	}
-
-
-
-
-	/**Creating a link for each project to be viewed as a PDF on Mobiles**/
-
-	a.fuzzy, a.fe, a.M2M, a.ICRP, a.TC, a.RPS, a.PRINCE2{
-		display:block;
-		width:50px;
-		height:50px;
-		line-height:50px;
-		border: 2px solid #ffffff;
-		border-radius: 40%;
-		color:#f5f5f5;
-		text-align:center;
-		background: #464646;
-		font-size:16px;
-		font-weight:bold;
-		left:220px;
-		top:870px;
-	}
-
-	/*Positioning each link for mobiles*/	
-
-	a.fe{
-		top:1020px;
-	}	
-
-	a.M2M{
-		top:1170px;
-	}
-
-	a.ICRP{
-		top:1340px;
-	}
-
-	a.TC{
-		top:1500px;
-	}
-
-	a.RPS{
-		top:1650px;
-	}
-
-	a.PRINCE2{
-		top:1800px;
-	}
-
 
 }
 
 
 
-/*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
+
+/*---------------------------PROJECTS----------------------------------------*/
+
+
+/*Settings for each flipbook, also a shadow effect to give it a glow*/
+
+.project-flipbook .page {
+	background-size:100% 100%;
+}
+
+
+.project-flipbook .shadow{
+	box-shadow:0 0 20px #ccc;
+}
+
+
+/*------Header positioning for each projects-----*/
+
+/*Fuzzy Light System*/
+header.LightingSystem{
+	top:300px;
+	left:40px;
+}
+
+
+/*Front End Report*/
+header.FEReport{
+	top:1000px;
+	left:100px;
+}
+
+/*M2M Report*/
+header.M2MReport{
+	top:1700px;
+	left:190px;
+}
+
+/*InternetControlReport*/
+header.ICRPReport{
+	top:2450px;
+	left:110px;
+}
+
+/*TestCases*/
+header.TCReport{
+	top:3150px;
+	left:170px;
+}
+
+/*RPSReport*/
+header.RPSReport{
+	top:3870px;
+	left:140px;
+}
+
+/*PRINCE2Report*/
+header.PRINCEReport{
+	top:4600px;
+	left:120px;
+}
+
+
+
+/*------Project paper positioning for each-----*/
+
+/*Fuzzy Light System*/
+.project-flipbook .flipbook{
+	left:-100px;
+	top:300px;
+}
+
+/*Front End Report*/
+.project-flipbook .flipbook1{
+	left:-100px;
+	top:450px;
+
+}
+
+/*M2M Report*/
+.project-flipbook .flipbook2{
+	left:-100px;
+	top:600px;
+}
+
+/*InternetControlReport*/
+.project-flipbook .flipbook3{
+	left:-100px;
+	top:770px;
+}
+
+/*Test Cases Report*/
+.project-flipbook .flipbook4{
+	left:-100px;
+	top:920px;
+}
+
+/*RockPaperScissors Report*/
+.project-flipbook .flipbook5{
+	left:-100px;
+	top:1070px;
+}
+
+/*PRINCE2 Report*/
+.project-flipbook .flipbook6{
+	left:-100px;
+	top:1230px;
+}
+
+
+/*--------Project paper links for PDF version on Mobiles------------*/
+
+a.fuzzy, a.fe, a.M2M, a.ICRP, a.TC, a.RPS, a.PRINCE2{
+	display:block;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	border: 2px solid #ffffff;
+	border-radius: 40%;
+	color:#f5f5f5;
+	text-align:center;
+	background: #464646;
+	font-size:16px;
+	font-weight:bold;
+	left:220px;
+	top:870px;
+}
+
+/*Positioning each link for mobiles*/	
+
+a.fe{
+	top:1020px;
+}	
+
+a.M2M{
+	top:1170px;
+}
+
+a.ICRP{
+	top:1340px;
+}
+
+a.TC{
+	top:1500px;
+}
+
+a.RPS{
+	top:1650px;
+}
+
+a.PRINCE2{
+	top:1800px;
+}
+
+
+/*--------------------------------------------------IPAD/TABLET VERSION---------------------------------------------------------------------*/
 
 /*Whilst the width is between 600px and 800px do the following*/
 @media screen and (min-width: 600px) and (max-width: 800px) {
 
 	header{
 		font-size: 15px;
-
 	}
 
 	footer{
-		top:1500px;
+		max-width: 900px;
+		min-width: 900px;
 	}
 
+
 	ul.navigation {
-		max-width: 1000px;
-		min-width: 1000px;
+		max-width: 860px;
+		min-width: 860px;
+		margin: 0;
+		overflow: hidden;
 	}
 
 	ul.navigation li {
-		padding-left:80px;
+		padding-left:50px;
+		display: inline-block;
 	}
 
-	/*------Header positioning for each project on IPAD-----*/
+	/*Menu icon is hidden when the page is over the limit specified*/
+	ul.navigation li.icon {
+		display: none;
+	}
+
+	/*------Header positioning for each project on IPad----*/
 
 	/*Fuzzy Light System*/
 	header.LightingSystem{
@@ -421,8 +326,7 @@ ul.navigation li.icon {
 	}
 
 
-
-	/*------Project paper positioning for each on IPAD-----*/
+	/*------Project paper positioning for each on IPad-----*/
 
 	/*Fuzzy Light System*/
 	.project-flipbook .flipbook{
@@ -464,7 +368,6 @@ ul.navigation li.icon {
 	.project-flipbook .flipbook6{
 		left:0px;
 		top:1100px;
-		padding-bottom: 30px;
 	}
 
 
@@ -473,12 +376,12 @@ ul.navigation li.icon {
 		display:none;
 	}	
 
-	
+
 }
 
 
 
-/*---------------------------------------------------------------------LAPTOP VERSION!!!--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------LAPTOP VERSION---------------------------------------------------------------------*/
 
 /*Whilst the width is between 800px and 1600px do the following*/
 @media screen and (min-width: 800px) and (max-width: 1600px){
@@ -490,10 +393,13 @@ ul.navigation li.icon {
 
 	ul.navigation li {
 		padding-left:200px;
+		display: inline-block;
 	}
 
-	ul.navigation li a:hover{
-		background-color: #FF9900;
+
+	/*Menu icon is hidden when the page is over the limit specified*/
+	ul.navigation li.icon {
+		display: none;
 	}
 
 
@@ -608,13 +514,21 @@ ul.navigation li.icon {
 }
 
 
-/*---------------------------------------------------------------------GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
+/*--------------------------------------------------DESKTOP VERSION---------------------------------------------------------------------*/
 
 /*Whilst the width is above 1600px do the following*/
 @media screen and (min-width: 1600px) {
 
 	body{
 		overflow-x: hidden;
+	}
+
+	header {
+		font-size: 18px;
+	}
+
+	footer{
+		top:3600px;
 	}
 
 
@@ -663,18 +577,78 @@ ul.navigation li.icon {
 	}
 
 
+	/*Flipbook positioning*/
+
+	/*---------LightingSystem Report-----------*/
+
+	.project-flipbook .flipbook{
+		top:150px;
+		left:100px;
+	}
+
+
+	/*---------Front End Report-----------*/
+
+	.project-flipbook .flipbook1{
+		top:-350px;
+		left:1000px;
+	}
+
+	/*---------M2M Report-----------*/
+
+	.project-flipbook .flipbook2{
+		top:-150px;
+		left:100px;
+	}
+
+
+	/*---------Internet Control Research Paper-----------*/
+
+	.project-flipbook .flipbook3{
+		top:-650px;
+		left:1000px;
+	}
+
+	/*-----------Test Cases Report------------*/
+
+	.project-flipbook .flipbook4{
+		top:-450px;
+		left:100px;
+	}
+
+	/*-----------RockPaperScissors Report------------*/
+
+	.project-flipbook .flipbook5{
+		top:-950px;
+		left:1020px;
+	}
+
+	/*-----------PRINCE2 Report------------*/
+
+	.project-flipbook .flipbook6{
+		top:-750px;
+		left:100px;
+	}
+
+
+
 	/*-----Navigation settings for Desktop-----*/
+
+	
+	ul.navigation li {
+		padding-left:300px;
+		display:inline-block;
+	}
 
 	ul.navigation {
 		max-width: 2000px;
 		min-width: 2000px;
 	}
 
-	/*Adding a hover effect*/
-	ul.navigation li a:hover{
-		background-color: #FF9900;
+	/*Menu icon is hidden when the page is over the limit specified*/
+	ul.navigation li.icon {
+		display: none;
 	}
-
 	/*Links to hide until correct screensize*/
 	a.fuzzy, a.fe, a.M2M, a.ICRP, a.TC, a.RPS, a.PRINCE2{
 		display:none;
