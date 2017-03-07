@@ -12,9 +12,10 @@
 
 <body>
 
+
   <ul class="navigation" id="myNav">
 
-    <li><a href= "index.html" class = "HomeLink">Home</a></li>
+    <li><a href= "index.html">Home</a></li>
 
     <li><a href= "projects.html">Projects/Articles</a></li>
 
@@ -27,6 +28,7 @@
       </li>
 
     </ul>
+
 
 
 
@@ -244,11 +246,6 @@
 
 
 
-
-<script>
-  loadFlipBook();
-</script>
-
 <script type="text/javascript">
 
 // Load the HTML4 version if there's not CSS transform
@@ -256,7 +253,7 @@ yepnope({
   test : Modernizr.csstransforms,
   yep: ['extras/lib/turn.js'],
   nope: ['extras/lib/turn.html4.min.js'],
-  both: ['css/projects.css'],
+  both: ['styles/projects.css'],
   complete: loadFlipBook
 });
 

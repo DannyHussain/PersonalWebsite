@@ -24,7 +24,7 @@ function slider()
   var slider= document.getElementById('slider');
   slider.style.backgroundImage= "url(\'"+imgadr[cnt]+"\')";
   document.getElementById('sliderHeader').innerHTML= '';  
-  document.getElementById('sliderPara').innerHTML= '';
+  document.getElementById('sliderPara');
 }
 
 function next()
@@ -37,8 +37,8 @@ function next()
 
   var slider= document.getElementById('slider');
   slider.style.backgroundImage= "url(\'"+imgadr[cnt]+"\')";
-  document.getElementById('sliderHeader').innerHTML= '';
-  document.getElementById('sliderPara').innerHTML= '';
+  document.getElementById('sliderHeader');
+  document.getElementById('sliderPara');
   
   sliderTimer();
 }
@@ -54,8 +54,8 @@ function prev()
 
   var slider= document.getElementById('slider');
   slider.style.backgroundImage= "url(\'"+imgadr[cnt]+"\')";
-  document.getElementById('sliderHeader').innerHTML= '';
-  document.getElementById('sliderPara').innerHTML= '';
+  document.getElementById('sliderHeader');
+  document.getElementById('sliderPara');
 
   sliderTimer();
 }

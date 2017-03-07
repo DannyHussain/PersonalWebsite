@@ -337,11 +337,11 @@ h2
 /*Whilst the width is between 800px and 1600px do the following*/
 @media screen and (min-width: 800px) and (max-width: 1600px){
 
-  ul.navigation {
-    max-width: 1500px;
-    min-width: 1500px;
+ul.navigation {
+    max-width: 1600px;
+    min-width: 1600px;
   }
-
+  
   ul.navigation li {
     padding-left:200px;
   }
