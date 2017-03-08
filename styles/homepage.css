@@ -18,6 +18,12 @@ footer{
 	bottom:0px;
 }
 
+p.validation{
+	position: absolute;
+	top:-10px;
+	left:320px;
+}
+
 .title{
 	position: absolute;
 	width: 20em;
@@ -133,7 +139,7 @@ ul.navigation li.icon {
 
 
 
-/*--------------------------------------------------IPAD/TABLET VERSION---------------------------------------------------------------------*/
+/*-------------------------------IPAD/TABLET VERSION-----------------------------------*/
 
 /*Whilst the width is between 600px and 800px do the following*/
 @media screen and (min-width: 600px) and (max-width: 800px){
@@ -143,7 +149,6 @@ ul.navigation li.icon {
 	}
 
 	footer{
-		top:950px;
 		max-width: 940px;
 		min-width: 940px;
 	}
@@ -162,8 +167,6 @@ ul.navigation li.icon {
 	ul.navigation {
 		max-width: 900px;
 		min-width: 900px;
-		margin: 0;
-		overflow: hidden;
 	}
 
 	ul.navigation li {
@@ -178,7 +181,7 @@ ul.navigation li.icon {
 
 }
 
-/*--------------------------------------------------LAPTOP VERSION---------------------------------------------------------------------*/
+/*-------------------------------LAPTOP VERSION-----------------------------------*/
 
 /*Whilst the width is between 800px and 1600px do the following*/
 @media screen and (min-width: 800px) and (max-width: 1600px){
@@ -230,16 +233,15 @@ ul.navigation li.icon {
 
 
 
-/*--------------------------------------------------DESKTOP VERSION---------------------------------------------------------------------*/
+/*-------------------------------DESKTOP VERSION-----------------------------------*/
 
 /*Whilst the width is above 1600px do the following*/
 @media screen and (min-width: 1600px) {
 
 	footer{
-		min-width:2000px
+		min-width:2000px;
 		max-width:2000px;
 	}
-
 
 	.title{
 		top: 350px;

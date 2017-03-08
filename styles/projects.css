@@ -25,6 +25,11 @@ footer{
 	bottom:0px;
 }
 
+p.validation{
+	position: absolute;
+	top:-10px;
+	left:320px;
+}
 
 /* Remove default link settings*/
 a {
@@ -249,7 +254,7 @@ a.PRINCE2{
 }
 
 
-/*--------------------------------------------------IPAD/TABLET VERSION---------------------------------------------------------------------*/
+/*-------------------------------IPAD/TABLET VERSION-----------------------------------*/
 
 /*Whilst the width is between 600px and 800px do the following*/
 @media screen and (min-width: 600px) and (max-width: 800px) {
@@ -267,8 +272,6 @@ a.PRINCE2{
 	ul.navigation {
 		max-width: 860px;
 		min-width: 860px;
-		margin: 0;
-		overflow: hidden;
 	}
 
 	ul.navigation li {
@@ -381,7 +384,7 @@ a.PRINCE2{
 
 
 
-/*--------------------------------------------------LAPTOP VERSION---------------------------------------------------------------------*/
+/*-------------------------------LAPTOP VERSION-----------------------------------*/
 
 /*Whilst the width is between 800px and 1600px do the following*/
 @media screen and (min-width: 800px) and (max-width: 1600px){
@@ -394,6 +397,12 @@ a.PRINCE2{
 	ul.navigation li {
 		padding-left:200px;
 		display: inline-block;
+	}
+
+	/*Add hover effects to navigation*/
+	ul.navigation li a:hover{
+		background-color: #FF9900;
+		color:black;
 	}
 
 
@@ -514,7 +523,7 @@ a.PRINCE2{
 }
 
 
-/*--------------------------------------------------DESKTOP VERSION---------------------------------------------------------------------*/
+/*-------------------------------DESKTOP VERSION-----------------------------------*/
 
 /*Whilst the width is above 1600px do the following*/
 @media screen and (min-width: 1600px) {
@@ -643,6 +652,12 @@ a.PRINCE2{
 	ul.navigation {
 		max-width: 2000px;
 		min-width: 2000px;
+	}
+
+	/*Add hover effects to navigation*/
+	ul.navigation li a:hover{
+		background-color: #FF9900;
+		color:black;
 	}
 
 	/*Menu icon is hidden when the page is over the limit specified*/

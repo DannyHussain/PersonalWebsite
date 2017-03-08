@@ -12,80 +12,80 @@ function myFunction() {
 /*--------Function to create the flipbook------*/
 function loadFlipBook() {
 
-		$('.flipbook').turn({
+	$('.flipbook').turn({
 
       		//Width
       		width:700,
-      
+      		
       		//Height
       		height:500,
-      
+      		
      		 // Auto center this flipbook
-     		autoCenter: true
+     		 autoCenter: true
 
-  		});
-
-
-		$('.flipbook1').turn({
-
-			width:700,
-
-			height:500,
-
-			autoCenter: true
-
-		});
+     		});
 
 
-		$('.flipbook2').turn({
+	$('.flipbook1').turn({
 
-			width:700,
+		width:700,
 
-			height:500,
+		height:500,
 
-			autoCenter: true
+		autoCenter: true
 
-		});
+	});
 
-		$('.flipbook3').turn({
 
-			width:700,
+	$('.flipbook2').turn({
 
-			height:500,
+		width:700,
 
-			autoCenter: true
+		height:500,
 
-		});
+		autoCenter: true
 
-		$('.flipbook4').turn({
+	});
 
-			width:700,
+	$('.flipbook3').turn({
 
-			height:500,
+		width:700,
 
-			autoCenter: true
+		height:500,
 
-		});
+		autoCenter: true
 
-		$('.flipbook5').turn({
+	});
 
-			width:700,
+	$('.flipbook4').turn({
 
-			height:500,
+		width:700,
 
-			autoCenter: true
+		height:500,
 
-		});
+		autoCenter: true
 
-		$('.flipbook6').turn({
+	});
 
-			width:700,
+	$('.flipbook5').turn({
 
-			height:500,
+		width:700,
 
-			autoCenter: true
+		height:500,
 
-		});
+		autoCenter: true
+
+	});
+
+	$('.flipbook6').turn({
+
+		width:700,
+
+		height:500,
+
+		autoCenter: true
+
+	});
 
 
 }

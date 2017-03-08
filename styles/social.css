@@ -35,6 +35,12 @@ footer{
   bottom:0px;
 }
 
+p.validation{
+  position: absolute;
+  top:-10px;
+  left:320px;
+}
+
 
 /* Remove default link settings*/
 a {
@@ -172,12 +178,7 @@ ul.navigation li.icon {
 }
 
 
-
-
-
-
-
-/*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
+/*-------------------------------IPAD/TABLET VERSION-----------------------------------*/
 
 /*Whilst the width is between 600px and 800px do the following*/
 @media screen and (min-width: 600px) and (max-width: 800px){
@@ -186,83 +187,83 @@ ul.navigation li.icon {
     overflow-x: hidden;
   }
 
- ul.navigation {
-  max-width: 900px;
-  min-width: 900px;
-  margin: 0;
-  overflow: hidden;
+  ul.navigation {
+    max-width: 900px;
+    min-width: 900px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  ul.navigation li {
+    padding-left:50px;
+    display: inline-block;
+  }
+
+  /*Menu icon is hidden when the page is over the limit specified*/
+  ul.navigation li.icon {
+    display: none;
+  }
+
+  #slider
+  {
+    height: 500px;
+    background-size: 770px 800px;
+  }
+
+  #slider:after
+  {
+    top: 84px;
+    left: 45px;
+    width: 89.7%;
+    height: 503px;
+  }
+
+  #left
+  {
+    margin: 210px 50px;
+  }
+
+  #right
+  {
+    margin: 210px 50px;
+  }
+
+  h2
+  {
+    font-size: 36px;
+    padding-top:210px;
+  }
+
+  header{
+    font-size: 18px;
+    left:130px;
+    top:50px;
+  }
+
+  #fblogo{
+    left:200px;
+    top:150px;
+  }
+
+  #lilogo{
+    left:-110px;
+    top:350px;
+  }
+
+  #inlogo{
+    left:200px;
+    top:450px;
+  }
+
+  footer{
+    min-width: 1000px;
+    max-width: 1000px;
+  }
+
+
 }
 
-ul.navigation li {
-  padding-left:50px;
-  display: inline-block;
-}
-
-/*Menu icon is hidden when the page is over the limit specified*/
-ul.navigation li.icon {
-  display: none;
-}
-
-#slider
-{
-  height: 500px;
-  background-size: 770px 800px;
-}
-
-#slider:after
-{
-  top: 84px;
-  left: 45px;
-  width: 89.7%;
-  height: 503px;
-}
-
-#left
-{
-  margin: 210px 50px;
-}
-
-#right
-{
-  margin: 210px 50px;
-}
-
-h2
-{
-  font-size: 36px;
-  padding-top:210px;
-}
-
-header{
-  font-size: 18px;
-  left:130px;
-  top:50px;
-}
-
-#fblogo{
-  left:200px;
-  top:150px;
-}
-
-#lilogo{
-  left:-110px;
-  top:350px;
-}
-
-#inlogo{
-  left:200px;
-  top:450px;
-}
-
-footer{
-  min-width: 1000px;
-  max-width: 1000px;
-}
-
-
-}
-
-/*---------------------------------------------------------------------LAPTOP VERSION!!!--------------------------------------------------------------------------------------*/
+/*-------------------------------LAPTOP VERSION-----------------------------------*/
 
 /*Whilst the width is between 800px and 1600px do the following*/
 @media screen and (min-width: 800px) and (max-width: 1600px){
@@ -275,6 +276,12 @@ footer{
   ul.navigation li {
     padding-left:200px;
     display: inline-block;
+  }
+
+  /*Add hover effects to navigation*/
+  ul.navigation li a:hover{
+    background-color: #FF9900;
+    color:black;
   }
 
   /*Menu icon is hidden when the page is over the limit specified*/
@@ -341,11 +348,14 @@ footer{
 
 
 
-/*---------------------------------------------------------------------GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
+/*-------------------------------DESKTOP VERSION-----------------------------------*/
 
 /*Whilst the width is above 1600px do the following*/
 @media screen and (min-width: 1600px) {
 
+  body{
+    overflow-x: hidden;
+  }
 
   ul.navigation li {
     padding-left:300px;
@@ -362,73 +372,79 @@ footer{
     display: none;
   }
 
+  /*Add hover effects to navigation*/
+  ul.navigation li a:hover{
+    background-color: #FF9900;
+    color:black;
+  }
+
   footer{
     min-width: 2000px;
     max-width: 2000px;
   }
 
 
-header {
-  font-size: 25px;
-  
-  left: 620px;
-  top:950px;
-  
-}
+  header {
+    font-size: 25px;
 
-/*Set up the slide show, image covers the whole specified display*/
-#slider
-{
-  height: 800px;
-  background-size: 1350px 802px;
-}
+    left: 620px;
+    top:950px;
 
-#slider:after
-{
-  top: 95px;
-  left: 276px;
-  width: 71%;
-  height: 802px;
-}
+  }
 
+  /*Set up the slide show, image covers the whole specified display*/
+  #slider
+  {
+    height: 800px;
+    background-size: 1350px 802px;
+  }
 
-#left
-{
-  margin: 350px 300px;
-}
-
-#right
-{
-  margin: 350px 300px;
-}
-
-/*Photography heading positioned to the center of the slideshow upon first startup*/
-h2
-{
-  font-size: 52px;
-  padding-top:350px;
-}
-
-header{
-  top:100px;
-}
+  #slider:after
+  {
+    top: 95px;
+    left: 276px;
+    width: 71%;
+    height: 802px;
+  }
 
 
-/*Social websites logo positioning*/
-#fblogo{
-  left:780px;
-  top:200px;
-}
+  #left
+  {
+    margin: 350px 300px;
+  }
 
-#lilogo{
-  left:470px;
-  top:400px;
-}
+  #right
+  {
+    margin: 350px 300px;
+  }
 
-#inlogo{
- left:160px;
- top:620px;
-}
+  /*Photography heading positioned to the center of the slideshow upon first startup*/
+  h2
+  {
+    font-size: 52px;
+    padding-top:350px;
+  }
+
+  header{
+    top:100px;
+  }
+
+
+  /*Social websites logo positioning*/
+  #fblogo{
+    left:780px;
+    top:100px;
+  }
+
+  #lilogo{
+    left:470px;
+    top:300px;
+  }
+
+  #inlogo{
+   left:160px;
+   top:520px;
+ }
 
 }
 

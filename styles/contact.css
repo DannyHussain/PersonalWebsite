@@ -18,6 +18,12 @@ footer{
   bottom:0px;
 }
 
+p.validation{
+  position: absolute;
+  top:-10px;
+  left:320px;
+}
+
 .text{
   color: #FFFFFF;
 }
@@ -109,9 +115,11 @@ ul.navigation li.icon {
 }
 
 #contact input, #contact textarea {
+  padding: 5px;
   width: 240px;
   font-size: 1em;
   margin: 0px 0px 30px 30px;
+  border: 2px solid #ccc;
 }
 
 #contact textarea {
@@ -158,7 +166,7 @@ label {
 }
 
 
-/*---------------------------------------------------------------------IPAD/TABLET VERSION!----------------------------------------------------------------------------------*/
+/*-------------------------------IPAD/TABLET VERSION-----------------------------------*/
 
 /*Whilst the width is between 600px and 800px do the following*/
 @media screen and (min-width: 600px) and (max-width: 800px){
@@ -183,8 +191,6 @@ label {
   ul.navigation {
     max-width: 900px;
     min-width: 900px;
-    margin: 0;
-    overflow: hidden;
   }
 
   ul.navigation li {
@@ -209,11 +215,8 @@ label {
   }
 
   #contact input, #contact textarea {
-    padding: 5px;
     width: 470px;
-    font-size: 1.4em;
     margin: 0px 0px 40px 0px;
-    border: 2px solid #ccc;
   }
 
   #contact input.button {
@@ -240,7 +243,7 @@ label {
 }
 
 
-/*---------------------------------------------------------------------LAPTOP VERSION!!!--------------------------------------------------------------------------------------*/
+/*-------------------------------LAPTOP VERSION-----------------------------------*/
 
 /*Whilst the width is between 800px and 1600px do the following*/
 @media screen and (min-width: 800px) and (max-width: 1600px){
@@ -261,6 +264,12 @@ label {
   ul.navigation li {
     padding-left:200px;
     display: inline-block;
+  }
+
+   /*Add hover effects to navigation*/
+  ul.navigation li a:hover{
+    background-color: #FF9900;
+    color:black;
   }
 
   /*Menu icon is hidden when the page is over the limit specified*/
@@ -288,11 +297,8 @@ label {
   }
 
   #contact input, #contact textarea {
-    padding: 5px;
     width: 470px;
-    font-size: 1.4em;
     margin: 0px 0px 40px 0px;
-    border: 2px solid #ccc;
   }
 
   #contact input.button {
@@ -319,7 +325,7 @@ label {
 
 
 
-/*---------------------------------------------------------------------GLOBAL/DESKTOP VERSION!-----------------------------------------------------------------------------------*/
+/*-------------------------------DESKTOP VERSION-----------------------------------*/
 
 /*Whilst the width is above 1600px do the following*/
 @media screen and (min-width: 1600px) {
@@ -336,6 +342,12 @@ label {
   ul.navigation {
     max-width: 2000px;
     min-width: 2000px;
+  }
+
+   /*Add hover effects to navigation*/
+  ul.navigation li a:hover{
+    background-color: #FF9900;
+    color:black;
   }
 
   /*Menu icon is hidden when the page is over the limit specified*/
@@ -363,11 +375,8 @@ label {
   }
 
   #contact input, #contact textarea {
-    padding: 5px;
     width: 470px;
-    font-size: 1.4em;
     margin: 0px 0px 40px 0px;
-    border: 2px solid #ccc;
   }
 
   #contact input.button {

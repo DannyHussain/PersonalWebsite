@@ -17,6 +17,11 @@ footer{
   bottom:0px;
 }
 
+p.validation{
+  position: absolute;
+  top:-10px;
+  left:320px;
+}
 
 /* Remove default link settings*/
 a {
@@ -126,7 +131,6 @@ span{
  0% {opacity: 0;}
  100% {opacity: 1;}
  from { width: 0; } 
-
 }
 
 @keyframes type3{
@@ -147,7 +151,7 @@ span{
 }
 
 
-/*--------------------------------------------------IPAD/TABLET VERSION---------------------------------------------------------------------*/
+/*-------------------------------IPAD/TABLET VERSION-----------------------------------*/
 
 /*Whilst the width is between 600px and 800px do the following*/
 @media screen and (min-width: 600px) and (max-width: 800px){
@@ -177,12 +181,12 @@ span{
   p.animation{
     top:150px;
     font-size: 18px;
-    margin: 10px  0 0 10px;
+    margin: 10px 0 0 10px;
   }
 
 }
 
-/*--------------------------------------------------LAPTOP VERSION---------------------------------------------------------------------*/
+/*-------------------------------LAPTOP VERSION-----------------------------------*/
 
 /*Whilst the width is between 800px and 1600px do the following*/
 @media screen and (min-width: 800px) and (max-width: 1600px){
@@ -202,6 +206,12 @@ span{
     display: inline-block;
   }
 
+  /*Add hover effects to navigation*/
+  ul.navigation li a:hover{
+    background-color: #FF9900;
+    color:black;
+  }
+
   /*Menu icon is hidden when the page is over the limit specified*/
   ul.navigation li.icon {
     display: none;
@@ -214,13 +224,13 @@ span{
   p.animation{
     top:150px;
     font-size: 20px;
-    margin: 10px  0 0 10px;
+    margin: 10px 0 0 10px;
   }
 
 }
 
 
-/*--------------------------------------------------DESKTOP VERSION---------------------------------------------------------------------*/
+/*-------------------------------DESKTOP VERSION-----------------------------------*/
 
 /*Whilst the width is above 1600px do the following*/
 @media screen and (min-width: 1600px) {
@@ -242,6 +252,12 @@ span{
   ul.navigation {
     max-width: 2000px;
     min-width: 2000px;
+  }
+
+  /*Add hover effects to navigation*/
+  ul.navigation li a:hover{
+    background-color: #FF9900;
+    color:black;
   }
 
   /*Menu icon is hidden when the page is over the limit specified*/
