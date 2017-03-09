@@ -1,6 +1,6 @@
 # PersonalWebsite
 
-View the website here: https://dannyhussain.github.io/PersonalWebsite/     (Still Under-Development)
+View the website here: https://dannyhussain.github.io/PersonalWebsite/ 
 
 
 If you get the 405 error when submitting the contact form then you can retry it through the DMU servers on the following link:
