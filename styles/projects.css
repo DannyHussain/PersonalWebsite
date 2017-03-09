@@ -390,8 +390,8 @@ a.PRINCE2{
 @media screen and (min-width: 800px) and (max-width: 1600px){
 
 	ul.navigation {
-		max-width: 1600px;
-		min-width: 1600px;
+		max-width: 1860px;
+		min-width: 1860px;
 	}
 
 	ul.navigation li {
@@ -403,6 +403,11 @@ a.PRINCE2{
 	ul.navigation li a:hover{
 		background-color: #FF9900;
 		color:black;
+	}
+
+	footer{
+		max-width: 1900px;
+		min-width: 1900px;
 	}
 
 
@@ -538,6 +543,8 @@ a.PRINCE2{
 
 	footer{
 		top:3600px;
+		min-width: 2300px;
+		max-width: 2300px;
 	}
 
 
